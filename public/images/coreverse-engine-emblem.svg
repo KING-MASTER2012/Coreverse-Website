@@ -27,7 +27,7 @@
     </filter>
   </defs>
 
-  <rect width="800" height="500" fill="url(#bgGrad)" />
+  <rect width="500" height="500" fill="url(#bgGrad)" />
 
   <g transform="translate(250, 250)">
 
