@@ -1,0 +1,39 @@
+{
+  "en": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "Real-time worlds, built with control."
+    },
+    "navigation": {
+      "main": "Main",
+      "install": "Install",
+      "community": "Community",
+      "faq": "FAQ"
+    },
+    "theme": {
+      "light": "Switch to light mode",
+      "dark": "Switch to dark mode"
+    },
+    "home": {
+      "eyebrow": "Next generation game engine",
+      "title": "Build immersive universes with a fast, modern engine.",
+      "description": "Coreverse Engine gives creators a focused foundation for rendering, gameplay systems, and tool-driven production across dark and light workflows.",
+      "primaryAction": "Start building",
+      "secondaryAction": "Explore features",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "Responsive runtime target"
+        },
+        {
+          "value": "Modular",
+          "label": "Rendering and gameplay layers"
+        },
+        {
+          "value": "Creator-first",
+          "label": "Tools designed for iteration"
+        }
+      ]
+    }
+  }
+}
