@@ -24,6 +24,8 @@ Last Updated: 11.07.2026 16:15 by KINGMASTER-2012
 - Without altering the panel designs, the scroll system has been updated as follows: When a button is clicked, its corresponding panel is inserted below the currently open panel, the scroll position is adjusted accordingly, the previous panel is removed from the scroll container (with the scrollbar kept hidden and non-interactive), and the new panel is displayed without modifying the background.
 - Features button has been created in top bar between 'Install' and 'Community' buttons. Same time, 'Explore features' button's active has been changed in main.
 - Cool and modern panel has been made that: Background is not changed, only its over(for Z-axis) section is changed like installation panel. First, video(Use all videos in public/video/*.mp4. The system should remain dynamic and continue to function even if a new video is added later or a video is deleted.) has be played by Vidstack in right section. In left section, there will be some texts. In bottom, there has be circles[Every circle represents a video. Circle of playing video specified.(Color changing etc.)] and circles' right and left arrows changing playing video. Same time, videos auto changing when playing video is finished.
+- Cool and modern login and register screen has been liked others. E-mail has been sent by Brevo and Database by Supabase(PostgreSQL).
+
 ## What will be done?
 1) Primary Priority(Firstly)
-[] Cool and modern login and register screen will be like others. E-mail will be sent by Brevo and Database by Supabase(PostgreSQL).
+[] Mobile support will be added.
