@@ -1,5 +1,190 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# AGENTS.md
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+## Project Overview
+
+This project is a modern website off a game engine.
+
+## Tech Stack
+
+- TypeScript
+- React
+- Next.js
+- Tailwind CSS
+- radix-ui
+- ESLint
+- shadcn
+
+## Coding Rules
+
+- Use TypeScript(.ts) or TypeScript JSX(.tsx) everytime.
+- Don't use 'any'.
+- Design have to be modern, support double thema mode(dark and white), secondary color.
+- Don't write unnecessary comment.
+
+## Folder Structure
+
+coreverse-website/
+  - .agents/
+  - .idea/
+  - .next/
+  - node_modules/
+  - public/
+     - fonts/
+     - images/
+       - Apple-Logo.svg
+       - coreverse-engine.svg
+       - coreverse-engine-emblem.svg
+       - Linux-Logo.svg
+       - OpenGL-Logo.svg
+       - Vulkan-Logo.svg
+       - Windows-Logo.svg
+     - videos/
+       - Editor.mp4
+       - Intro.mp4
+       - Physics.mp4
+       - Renderer.mp4
+     - file.svg
+     - globe.svg
+     - next.svg
+     - vercel.svg
+     - window.svg
+  - src/
+     - app/
+        - api/
+           - auth/
+              - callback/
+                 - route.ts
+        - [locale]/
+           - layout.tsx
+           - (website)/
+              - layout.tsx
+              - page.tsx
+           - (auth)/
+              - forgot-password/
+                 - page.tsx
+              - login/
+                 - page.tsx
+              - register/
+                 - page.tsx
+              - reset-password/
+                 - page.tsx
+        - favicon.ico
+        - globals.css
+        - layout.tsx
+        - page.tsx
+     - assets/
+        - search.svg
+     - components/
+        - effects/
+           - interactive-background.tsx
+        - layout/
+           - panel-container.tsx
+           - top-bar.tsx
+        - ui/
+           - Button/
+              - button.tsx
+           - Checkbox/
+              - checkbox.tsx
+           - InitialsAvatar/
+              - initials-avatar.tsx
+           - Input/
+              - input.tsx
+           - Label/
+              - label.tsx
+           - UserAvatar/
+              - user-avatar
+     - config/
+     - constants/
+        - i18n.json
+     - context/
+        - scroll-context.tsx
+     - features/
+        - auth/
+            - actions.ts
+            - avatar-upload.tsx
+            - forgot-password-form.tsx
+            - login-form.tsx
+            - oauth-buttons.tsx
+            - register-form.tsx
+            - reset-password-form.tsx
+            - types.ts
+            - user-menu.tsx
+            - validation.ts
+        - community/
+            - community-panel.tsx
+        - features/
+            - feature-controls.tsx
+            - feature-video.tsx
+            - features-panel.tsx
+            - types.ts
+        - install/
+            - install-panel.tsx
+     - generated/
+       - video-manifest.ts 
+     - hooks/
+     - i18n/
+        - navigation.ts
+        - request.ts
+        - routing.ts
+     - lib/
+        - avatar-color.ts
+        - avatar-url.ts
+        - image-compression.ts
+        - utils.ts
+     - scripts/
+        - generate-video.mjs
+     - services/
+        - avatar-storage.ts
+        - brevo.ts
+     - supabase/
+        - migrations/
+           - 20260713124200_avatar_system.sql
+           - 20260713120900_username_add.sql
+        - admin.ts
+        - client.ts
+        - middleware.ts
+        - server.ts
+     - utils/
+     - proxy.ts
+  - .editorconfig
+  - .env.example
+  - .env.local
+  - .gitattributes
+  - .gitignore
+  - AGENTS.md
+  - CLAUDE.md
+  - components.json
+  - eslint.config.mjs
+  - LICENSE
+  - next.config.ts
+  - next-env.d.ts
+  - package.json
+  - package-lock.json
+  - postcss.config.mjs
+  - PROGRESS.md
+  - README.md
+  - tsconfig.json
+
+## Testing
+
+After each change:
+
+```bash
+npm run lint
+npm run test
+```
+
+## Do Not
+
+- Don't change package.json unless necessary.
+- Don't add new dependency unless necessary.
+- Don't change config files unless necessary.
+
+## Preferred Style
+
+- Use Functional Component.
+- Use Arrow Function.
+- Use Async/Await.
+- Style have to obey the rules of TypeScript, JavaScript, ESLint, React Compiler.
+- The code's structure algorithm have to be modular, work correctly, be written cleanly.
+- The comment lines, parameters and functions have to be English.

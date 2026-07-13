@@ -2,24 +2,51 @@
   "en": {
     "brand": {
       "name": "Coreverse Engine",
-      "tagline": "Real-time worlds, built with control."
+      "tagline": "Core & Universe"
     },
     "navigation": {
       "main": "Main",
       "install": "Install",
+      "features": "Features",
       "community": "Community",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "login": "Login"
+    },
+    "userMenu": {
+      "openMenu": "User Menu",
+      "settings": "Settings",
+      "logOut": "Log Out",
+      "loggingOut": "Logging Out"
     },
     "theme": {
       "light": "Switch to light mode",
       "dark": "Switch to dark mode"
     },
+    "language": {
+      "label": "Change language",
+      "english": "English",
+      "turkish": "Turkish",
+      "french": "French",
+      "german": "German",
+      "spanish": "Spanish",
+      "portuguese": "Portuguese",
+      "russian": "Russian",
+      "chinese": "Chinese",
+      "japanese": "Japanese",
+      "korean": "Korean",
+      "polish": "Polish",
+      "indian": "Indian",
+      "arabic": "Arabic"
+    },
     "home": {
       "eyebrow": "Next generation game engine",
       "title": "Build immersive universes with a fast, modern engine.",
-      "description": "Coreverse Engine gives creators a focused foundation for rendering, gameplay systems, and tool-driven production across dark and light workflows.",
+      "description": "Coreverse Engine, with its Vulkan and OpenGL-supported renderer systems, offers developers the ability to develop using C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift, and TypeScript, while also providing advanced core enhancements and the opportunity to create worlds with different physics systems.",
       "primaryAction": "Start building",
       "secondaryAction": "Explore features",
+      "previewLabel": "Runtime preview",
+      "labName": "Coreverse Laboratory",
+      "liveStatus": "Live",
       "stats": [
         {
           "value": "120Hz",
@@ -34,6 +61,2828 @@
           "label": "Tools designed for iteration"
         }
       ]
+    },
+    "installPanel": {
+      "eyebrow": "Install Coreverse",
+      "title": "Choose your build path.",
+      "description": "Select your operating system, pick a graphics API, and download the matching placeholder package.",
+      "osTitle": "Select your operating system",
+      "osDescription": "Start with the platform where Coreverse Engine will run.",
+      "graphicsTitle": "Select your graphics API",
+      "graphicsDescription": "Choose Vulkan or OpenGL for the selected operating system.",
+      "downloadTitle": "Your download is ready",
+      "downloadDescription": "The current download is a text placeholder. Real packages can replace it later.",
+      "selectedOs": "Operating system",
+      "selectedGraphics": "Graphics API",
+      "downloadAction": "Download text file",
+      "back": "Back",
+      "steps": {
+        "os": {
+          "title": "Operating system",
+          "description": "Windows, Linux, or macOS"
+        },
+        "graphics": {
+          "title": "Graphics API",
+          "description": "Vulkan or OpenGL"
+        },
+        "download": {
+          "title": "Download",
+          "description": "Generated text file"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "Search",
+      "discussionBadge": "Community",
+      "discussionTitle": "Trend Discussions and Questions",
+      "eventsBadge": "Latest",
+      "eventsTitle": "Recent Events"
+    },
+    "featuresPanel": {
+      "badge": "Features",
+      "title": "Powerful Features",
+      "description": "Build games faster with a modern, extensible, and high-performance engine.",
+
+      "videos": [
+        {
+          "title": "Modern Editor",
+          "description": "Create immersive worlds with an intuitive editor designed for maximum productivity."
+        },
+        {
+          "title": "High-Performance Renderer",
+          "description": "Experience real-time rendering powered by Vulkan and OpenGL."
+        },
+        {
+          "title": "Flexible Scripting",
+          "description": "Develop gameplay using Rust, C++, Python, and other supported languages."
+        },
+        {
+          "title": "Advanced Physics",
+          "description": "Create realistic simulations with modular and customizable physics systems."
+        },
+        {
+          "title": "Cross-Platform Deployment",
+          "description": "Export your projects for Windows, Linux, and other supported platforms."
+        }
+      ],
+
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "auth": {
+      "login": {
+        "title": "Welcome back",
+        "subtitle": "Sign in to continue",
+        "emailLabel": "Email",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "Remember me",
+        "forgotPassword": "Forgot password",
+        "submit": "Sign in",
+        "submitting": "Signing in...",
+        "noAccountDivider": "Don't have an account?",
+        "noAccount": "Don't have an account yet?",
+        "registerLink": "Sign up",
+        "orContinueWith": "Or continue with"
+      },
+      "register": {
+        "title": "Create an account",
+        "subtitle": "Join the Coreverse Engine community",
+        "usernameLabel": "Username",
+        "usernamePlaceholder": "username",
+        "emailLabel": "Email",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Confirm password",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "I accept the <terms>Terms of Service</terms>",
+        "submit": "Create account",
+        "submitting": "Creating account...",
+        "successMessage": "Your account has been created! Please verify your email before continuing.",
+        "haveAccount": "Already have an account?",
+        "loginLink": "Sign in",
+        "avatar": {
+          "hint": "PNG, JPG, or WEBP · max. 8MB",
+          "changePhoto": "Change photo",
+          "processing": "Processing...",
+          "remove": "Remove",
+          "invalidType": "Please select an image file.",
+          "tooLarge": "File is too large (max. 8MB).",
+          "processingFailed": "The image could not be processed. Please try again."
+        }
+      },
+      "forgotPassword": {
+        "title": "Forgot your password?",
+        "subtitle": "Enter your email address and we'll send you a password reset link",
+        "emailLabel": "Email",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "Send reset link",
+        "submitting": "Sending...",
+        "successMessage": "A password reset link has been sent to your email.",
+        "backToLogin": "Back to sign in"
+      },
+      "resetPassword": {
+        "title": "Set a new password",
+        "subtitle": "Create a new password for your account",
+        "passwordLabel": "New password",
+        "confirmPasswordLabel": "Confirm new password",
+        "submit": "Update password",
+        "submitting": "Updating..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Continue with Google",
+        "continueWithGithub": "Continue with GitHub"
+      },
+      "welcomeEmail": {
+        "subject": "Welcome to Coreverse Engine!",
+        "body": "Hello {username}, thank you for joining the Coreverse Engine family."
+      },
+      "errors": {
+        "emailInvalid": "Please enter a valid email address.",
+        "passwordMin": "Password must be at least 6 characters long.",
+        "usernameMin": "Username must be at least 3 characters long.",
+        "usernameMax": "Username can be up to 24 characters long.",
+        "usernamePattern": "Username may only contain letters, numbers, and underscores.",
+        "passwordMismatch": "Passwords do not match.",
+        "acceptTermsRequired": "You must accept the terms to continue.",
+        "invalidCredentials": "Incorrect email or password.",
+        "emailInUse": "This email is already in use.",
+        "generic": "Something went wrong. Please try again.",
+        "avatarInvalid": "The profile picture is invalid or too large."
+      }
+    }
+  },
+  "tr": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "Çekirdek & Evren"
+    },
+    "navigation": {
+      "main": "Ana",
+      "install": "Kurulum",
+      "features": "Özellikler",
+      "community": "Topluluk",
+      "faq": "SSS",
+      "login": "Oturum Aç"
+    },
+    "userMenu": {
+      "openMenu": "Kullanıcı menüsü",
+      "settings": "Ayarlar",
+      "logOut": "Çıkış yap",
+      "loggingOut": "Çıkış yapılıyor..."
+    },
+    "theme": {
+      "light": "Aydınlık moda al",
+      "dark": "Karanlık moda al"
+    },
+    "language": {
+      "label": "Dili değiştir",
+      "english": "İngilizce",
+      "turkish": "Türkçe",
+      "french": "Fransızca",
+      "german": "Almanca",
+      "spanish": "İspanyolca",
+      "portuguese": "Portekizce",
+      "russian": "Rusça",
+      "chinese": "Çince",
+      "japanese": "Japonca",
+      "korean": "Korece",
+      "polish": "Lehçe",
+      "indian": "Hintçe",
+      "arabic": "Arapça"
+    },
+    "home": {
+      "eyebrow": "Yeni nesil oyun motoru",
+      "title": "Hızlı ve modern bir motorla sürükleyici evrenler inşa et.",
+      "description": "Coreverse Engine, Vulkan ve OpenGL destekli render sistemleriyle, geliştiricilere C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift ve TypeScript kullanarak geliştirme imkanı sunarken, gelişmiş çekirdek geliştirmeleri ve farklı fizik sistemleriyle dünyalar yaratma fırsatı da sunuyor.",
+      "primaryAction": "İnşaa etmeye başla",
+      "secondaryAction": "Özellikleri keşfedin",
+      "previewLabel": "Çalışma zamanı önizlemesi",
+      "labName": "Coreverse Laboratuvarı",
+      "liveStatus": "Canlı",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "Duyarlı çalışma süresi hedefi"
+        },
+        {
+          "value": "Modüler",
+          "label": "Render ve oynanış katmanları"
+        },
+        {
+          "value": "Yaratıcı-öncelikli",
+          "label": "Tekrarlı geliştirme süreci için tasarlanmış araç"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Coreverse kurulumu",
+      "title": "Kurulum yolunu seç.",
+      "description": "İşletim sistemini seç, grafik API'yi belirle ve uygun yer tutucu paketi indir.",
+      "osTitle": "İşletim sistemini seç",
+      "osDescription": "Coreverse Engine'in çalışacağı platformla başla.",
+      "graphicsTitle": "Grafik API'yi seç",
+      "graphicsDescription": "Seçilen işletim sistemi için Vulkan veya OpenGL seç.",
+      "downloadTitle": "İndirmen hazır",
+      "downloadDescription": "Mevcut indirme bir metin yer tutucudur. Gerçek paketler daha sonra bunun yerine geçebilir.",
+      "selectedOs": "İşletim sistemi",
+      "selectedGraphics": "Grafik API",
+      "downloadAction": "Metin dosyasını indir",
+      "back": "Geri",
+      "steps": {
+        "os": {
+          "title": "İşletim sistemi",
+          "description": "Windows, Linux veya macOS"
+        },
+        "graphics": {
+          "title": "Grafik API",
+          "description": "Vulkan veya OpenGL"
+        },
+        "download": {
+          "title": "İndir",
+          "description": "Oluşturulan metin dosyası"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "Ara",
+      "discussionBadge": "Topluluk",
+      "discussionTitle": "Trend Tartışmalar ve Sorular",
+      "eventsBadge": "En Son",
+      "eventsTitle": "Son Olaylar"
+    },
+    "featuresPanel": {
+      "badge": "Özellikler",
+      "title": "Güçlü Özellikler",
+      "description": "Modern, genişletilebilir ve yüksek performanslı bir oyun motoruyla oyunlarınızı daha hızlı geliştirin.",
+
+      "videos": [
+        {
+          "title": "Modern Düzenleyici",
+          "description": "Maksimum verimlilik için tasarlanmış sezgisel bir düzenleyiciyle etkileyici dünyalar oluşturun."
+        },
+        {
+          "title": "Yüksek Performanslı Görüntüleyici",
+          "description": "Vulkan ve OpenGL destekli gerçek zamanlı görüntüleme deneyimini yaşayın."
+        },
+        {
+          "title": "Esnek Betik Desteği",
+          "description": "Rust, C++, Python ve diğer desteklenen dilleri kullanarak oyun mekaniklerini geliştirin."
+        },
+        {
+          "title": "Gelişmiş Fizik",
+          "description": "Modüler ve özelleştirilebilir fizik sistemleriyle gerçekçi simülasyonlar oluşturun."
+        },
+        {
+          "title": "Çapraz Platform Dağıtımı",
+          "description": "Projelerinizi Windows, Linux ve diğer desteklenen platformlar için dışa aktarın."
+        }
+      ],
+
+      "previous": "Önceki",
+      "next": "Sonraki"
+    },
+    "auth": {
+      "login": {
+        "title": "Tekrar hoş geldin",
+        "subtitle": "Devam etmek için giriş yap",
+        "emailLabel": "E-posta",
+        "emailPlaceholder": "ornek@coreverse.dev",
+        "passwordLabel": "Şifre",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "Beni hatırla",
+        "forgotPassword": "Şifremi unuttum",
+        "submit": "Giriş yap",
+        "submitting": "Giriş yapılıyor...",
+        "noAccountDivider": "Hesabın yok mu",
+        "noAccount": "Henüz bir hesabın yok mu?",
+        "registerLink": "Kayıt ol",
+        "orContinueWith": "Veya şununla devam et"
+      },
+      "register": {
+        "title": "Hesap oluştur",
+        "subtitle": "Coreverse Engine topluluğuna katıl",
+        "usernameLabel": "Kullanıcı adı",
+        "usernamePlaceholder": "kullaniciadi",
+        "emailLabel": "E-posta",
+        "emailPlaceholder": "ornek@coreverse.dev",
+        "passwordLabel": "Şifre",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Şifre (tekrar)",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "<terms>Kullanım Şartları</terms>'nı kabul ediyorum",
+        "submit": "Hesap oluştur",
+        "submitting": "Hesap oluşturuluyor...",
+        "successMessage": "Hesabın oluşturuldu! Devam etmeden önce lütfen e-postanı doğrula.",
+        "haveAccount": "Zaten bir hesabın var mı?",
+        "loginLink": "Giriş yap",
+        "avatar": {
+          "hint": "PNG, JPG ya da WEBP · maks. 8MB",
+          "changePhoto": "Fotoğrafı değiştir",
+          "processing": "İşleniyor...",
+          "remove": "Kaldır",
+          "invalidType": "Lütfen bir görsel dosyası seç.",
+          "tooLarge": "Dosya çok büyük (maks. 8MB).",
+          "processingFailed": "Görsel işlenemedi, tekrar dene."
+        }
+      },
+      "forgotPassword": {
+        "title": "Şifreni mi unuttun?",
+        "subtitle": "E-posta adresini gir, sana bir sıfırlama bağlantısı gönderelim",
+        "emailLabel": "E-posta",
+        "emailPlaceholder": "ornek@coreverse.dev",
+        "submit": "Sıfırlama bağlantısı gönder",
+        "submitting": "Gönderiliyor...",
+        "successMessage": "Şifre sıfırlama bağlantısı e-postana gönderildi.",
+        "backToLogin": "Girişe dön"
+      },
+      "resetPassword": {
+        "title": "Yeni şifre belirle",
+        "subtitle": "Hesabın için yeni bir şifre oluştur",
+        "passwordLabel": "Yeni şifre",
+        "confirmPasswordLabel": "Yeni şifre (tekrar)",
+        "submit": "Şifreyi güncelle",
+        "submitting": "Güncelleniyor..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Google ile devam et",
+        "continueWithGithub": "GitHub ile devam et"
+      },
+      "welcomeEmail": {
+        "subject": "Coreverse Engine'e hoş geldin!",
+        "body": "Merhaba {username}, Coreverse Engine ailesine katıldığın için teşekkürler."
+      },
+      "errors": {
+        "emailInvalid": "Geçerli bir e-posta adresi gir.",
+        "passwordMin": "Şifre en az 6 karakter olmalı.",
+        "usernameMin": "Kullanıcı adı en az 3 karakter olmalı.",
+        "usernameMax": "Kullanıcı adı en fazla 24 karakter olabilir.",
+        "usernamePattern": "Kullanıcı adı sadece harf, rakam ve alt çizgi içerebilir.",
+        "passwordMismatch": "Şifreler eşleşmiyor.",
+        "acceptTermsRequired": "Devam etmek için şartları kabul etmelisin.",
+        "invalidCredentials": "E-posta veya şifre hatalı.",
+        "emailInUse": "Bu e-posta zaten kullanımda.",
+        "generic": "Bir şeyler ters gitti, lütfen tekrar dene.",
+        "avatarInvalid": "Profil fotoğrafı geçersiz ya da çok büyük."
+      }
+    }
+  },
+  "fr": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "Noyau & Univers"
+    },
+    "navigation": {
+      "main": "Principal",
+      "install": "Installer",
+      "features": "Fonctionnalités",
+      "community": "Communauté",
+      "faq": "FAQ",
+      "login": "Connexion"
+    },
+    "userMenu": {
+      "openMenu": "Menu utilisateur",
+      "settings": "Paramètres",
+      "logOut": "Se déconnecter",
+      "loggingOut": "Déconnexion en cours"
+    },
+    "theme": {
+      "light": "Passer en mode clair",
+      "dark": "Passer en mode sombre"
+    },
+    "language": {
+      "label": "Changer de langue",
+      "english": "Anglaise",
+      "turkish": "Turque",
+      "french" : "Français",
+      "german": "Allemande",
+      "spanish": "Espagnole",
+      "portuguese": "Portugaise",
+      "russian": "Russe",
+      "chinese": "Chinoise",
+      "japanese": "Japonaise",
+      "korean": "Coreénne",
+      "polish": "Polonise",
+      "indian": "Indienne",
+      "arabic": "Arabe"
+    },
+    "home": {
+      "eyebrow": "Moteur de jeu de nouvelle génération",
+      "title": "Créez des univers immersifs grâce à un moteur rapide et moderne.",
+      "description": "Coreverse Engine, avec ses systèmes de rendu compatibles Vulkan et OpenGL, offre aux développeurs la possibilité de développer en utilisant C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift et TypeScript, tout en fournissant des améliorations de base avancées et la possibilité de créer des mondes avec différents systèmes physiques.",
+      "primaryAction": "Commencez à construire",
+      "secondaryAction": "Explorez les fonctionnalités",
+      "previewLabel": "Aperçu de l'exécution",
+      "labName": "Laboratoire Coreverse",
+      "liveStatus": "En direct",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "Cible d'exécution réactive"
+        },
+        {
+          "value": "Modulaire",
+          "label": "Couches de rendu et de jeu"
+        },
+        {
+          "value": "Priorité aux créateurs",
+          "label": "Outils conçus pour l'itération"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Installez Coreverse",
+      "title": "Choisissez votre chemin de compilation.",
+      "description": "Sélectionnez votre système d'exploitation, choisissez une API graphique et téléchargez le package d'espace réservé correspondant.",
+      "osTitle": "Sélectionnez votre système d'exploitation",
+      "osDescription": "Commencez par la plateforme sur laquelle Coreverse Engine sera exécuté.",
+      "graphicsTitle": "Sélectionnez votre API graphique",
+      "graphicsDescription": "Choisissez Vulkan ou OpenGL pour le système d'exploitation sélectionné.",
+      "downloadTitle": "Votre téléchargement est prêt.",
+      "downloadDescription": "Le téléchargement actuel est un texte d'exemple. Les véritables paquets pourront le remplacer ultérieurement.",
+      "selectedOs": "Système opérateur",
+      "selectedGraphics": "API graphique",
+      "downloadAction": "Télécharger le fichier texte",
+      "back": "Dos",
+      "steps": {
+        "os": {
+          "title": "Système opérateur",
+          "description": "Windows, Linux, ou macOS"
+        },
+        "graphics": {
+          "title": "API graphique",
+          "description": "Vulkan ou OpenGL"
+        },
+        "download": {
+          "title": "Télécharger",
+          "description": "Fichier texte généré"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "Rechercher",
+      "discussionBadge": "Communauté",
+      "discussionTitle": "Discussions et questions tendances",
+      "eventsBadge": "Dernières",
+      "eventsTitle": "Événements récents"
+    },
+    "featuresPanel": {
+      "badge": "Fonctionnalités",
+      "title": "Fonctionnalités puissantes",
+      "description": "Créez des jeux plus rapidement avec un moteur moderne, extensible et haute performance.",
+
+      "videos": [
+        {
+          "title": "Éditeur moderne",
+          "description": "Créez des mondes immersifs avec un éditeur intuitif conçu pour une productivité maximale."
+        },
+        {
+          "title": "Moteur de rendu haute performance",
+          "description": "Profitez d'un rendu en temps réel propulsé par Vulkan et OpenGL."
+        },
+        {
+          "title": "Script flexible",
+          "description": "Développez le gameplay avec Rust, C++, Python et d'autres langages pris en charge."
+        },
+        {
+          "title": "Physique avancée",
+          "description": "Créez des simulations réalistes grâce à des systèmes physiques modulaires et personnalisables."
+        },
+        {
+          "title": "Déploiement multiplateforme",
+          "description": "Exportez vos projets pour Windows, Linux et d'autres plateformes prises en charge."
+        }
+      ],
+
+      "previous": "Précédent",
+      "next": "Suivant"
+    },
+    "auth": {
+      "login": {
+        "title": "Bon retour",
+        "subtitle": "Connectez-vous pour continuer",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Mot de passe",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "Se souvenir de moi",
+        "forgotPassword": "Mot de passe oublié",
+        "submit": "Se connecter",
+        "submitting": "Connexion en cours...",
+        "noAccountDivider": "Vous n'avez pas de compte ?",
+        "noAccount": "Vous n'avez pas encore de compte ?",
+        "registerLink": "S'inscrire",
+        "orContinueWith": "Ou continuer avec"
+      },
+      "register": {
+        "title": "Créer un compte",
+        "subtitle": "Rejoignez la communauté Coreverse Engine",
+        "usernameLabel": "Nom d'utilisateur",
+        "usernamePlaceholder": "nom_utilisateur",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Mot de passe",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Confirmer le mot de passe",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "J'accepte les <terms>Conditions d'utilisation</terms>",
+        "submit": "Créer un compte",
+        "submitting": "Création du compte...",
+        "successMessage": "Votre compte a été créé ! Veuillez vérifier votre adresse e-mail avant de continuer.",
+        "haveAccount": "Vous avez déjà un compte ?",
+        "loginLink": "Se connecter",
+        "avatar": {
+          "hint": "PNG, JPG ou WEBP · max. 8 Mo",
+          "changePhoto": "Changer la photo",
+          "processing": "Traitement en cours...",
+          "remove": "Supprimer",
+          "invalidType": "Veuillez sélectionner un fichier image.",
+          "tooLarge": "Le fichier est trop volumineux (max. 8 Mo).",
+          "processingFailed": "L'image n'a pas pu être traitée. Veuillez réessayer."
+        }
+      },
+      "forgotPassword": {
+        "title": "Mot de passe oublié ?",
+        "subtitle": "Saisissez votre adresse e-mail et nous vous enverrons un lien de réinitialisation du mot de passe",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "Envoyer le lien de réinitialisation",
+        "submitting": "Envoi en cours...",
+        "successMessage": "Un lien de réinitialisation du mot de passe a été envoyé à votre adresse e-mail.",
+        "backToLogin": "Retour à la connexion"
+      },
+      "resetPassword": {
+        "title": "Définir un nouveau mot de passe",
+        "subtitle": "Créez un nouveau mot de passe pour votre compte",
+        "passwordLabel": "Nouveau mot de passe",
+        "confirmPasswordLabel": "Confirmer le nouveau mot de passe",
+        "submit": "Mettre à jour le mot de passe",
+        "submitting": "Mise à jour en cours..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Continuer avec Google",
+        "continueWithGithub": "Continuer avec GitHub"
+      },
+      "welcomeEmail": {
+        "subject": "Bienvenue sur Coreverse Engine !",
+        "body": "Bonjour {username}, merci d'avoir rejoint la famille Coreverse Engine."
+      },
+      "errors": {
+        "emailInvalid": "Veuillez saisir une adresse e-mail valide.",
+        "passwordMin": "Le mot de passe doit contenir au moins 6 caractères.",
+        "usernameMin": "Le nom d'utilisateur doit contenir au moins 3 caractères.",
+        "usernameMax": "Le nom d'utilisateur peut contenir jusqu'à 24 caractères.",
+        "usernamePattern": "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des tirets bas.",
+        "passwordMismatch": "Les mots de passe ne correspondent pas.",
+        "acceptTermsRequired": "Vous devez accepter les conditions pour continuer.",
+        "invalidCredentials": "Adresse e-mail ou mot de passe incorrect.",
+        "emailInUse": "Cette adresse e-mail est déjà utilisée.",
+        "generic": "Une erreur s'est produite. Veuillez réessayer.",
+        "avatarInvalid": "La photo de profil est invalide ou trop volumineuse."
+      }
+    }
+  },
+  "de": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "Kern & Universum"
+    },
+    "navigation": {
+      "main": "Main",
+      "install": "Installieren",
+      "features": "Funktionen",
+      "community": "Gemeinschaft",
+      "faq": "HGF",
+      "login": "Login"
+    },
+    "userMenu": {
+      "openMenu": "Benutzermenü",
+      "settings": "Einstellungen",
+      "logOut": "Abmelden",
+      "loggingOut": "Abmelden"
+    },
+    "theme": {
+      "light": "In den Lichtmodus wechseln",
+      "dark": "In den Dunkelmodus wechseln"
+    },
+    "language": {
+      "label": "Sprache ändern",
+      "english": "Englische",
+      "turkish": "Türkische",
+      "french": "Französische",
+      "german": "Deustche",
+      "spanish": "Spanische",
+      "portuguese": "Portugiesische",
+      "russian": "Russische",
+      "chinese": "Chinesische",
+      "japanese": "Japanische",
+      "korean": "Koreanische",
+      "polish": "Polnische",
+      "indian": "Indische",
+      "arabic": "Arabische"
+    },
+    "home": {
+      "eyebrow": "Spiel-Engine der nächsten Generation",
+      "title": "Erschaffe immersive Welten mit einer schnellen, modernen Engine.",
+      "description": "Die Coreverse Engine bietet Entwicklern mit ihren Vulkan- und OpenGL-unterstützten Renderersystemen die Möglichkeit, mit C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift und TypeScript zu entwickeln und gleichzeitig fortschrittliche Kernerweiterungen sowie die Möglichkeit zur Erstellung von Welten mit unterschiedlichen Physiksystemen bereitzustellen.",
+      "primaryAction": "Beginnen Sie mit dem Bauen",
+      "secondaryAction": "Funktionen entdecken",
+      "previewLabel": "Laufzeitvorschau",
+      "labName": "Coreverse Laboratorium",
+      "liveStatus": "Live",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "Responsives Laufzeitziel"
+        },
+        {
+          "value": "Modular",
+          "label": "Rendering- und Gameplay-Ebenen"
+        },
+        {
+          "value": "Schöpfer zuerst",
+          "label": "Werkzeuge, die für die Iteration entwickelt wurden"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Coreverse installieren",
+      "title": "Wähle deinen Bauweg",
+      "description": "Wählen Sie Ihr Betriebssystem, wählen Sie eine Grafik-API und laden Sie das passende Platzhalterpaket herunter.",
+      "osTitle": "Wählen Sie Ihr Betriebssystem aus",
+      "osDescription": "Beginnen Sie mit der Plattform, auf der Coreverse Engine ausgeführt werden soll.",
+      "graphicsTitle": "Wählen Sie Ihre Grafik-API aus",
+      "graphicsDescription": "Wählen Sie Vulkan oder OpenGL für das ausgewählte Betriebssystem.",
+      "downloadTitle": "Ihr Download ist bereit",
+      "downloadDescription": "Der aktuelle Download ist ein Platzhaltertext. Er wird später durch die eigentlichen Pakete ersetzt.",
+      "selectedOs": "Betriebssystem",
+      "selectedGraphics": "Grafik-API",
+      "downloadAction": "Textdatei herunterladen",
+      "back": "Zurück",
+      "steps": {
+        "os": {
+          "title": "Betriebssystem",
+          "description": "Windows, Linux, oder macOS"
+        },
+        "graphics": {
+          "title": "Grafik-API",
+          "description": "Vulkan oder OpenGL"
+        },
+        "download": {
+          "title": "Herunterladen",
+          "description": "Generierte Textdatei"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "Suchen",
+      "discussionBadge": "Community",
+      "discussionTitle": "Trenddiskussionen und Fragen",
+      "eventsBadge": "Neueste",
+      "eventsTitle": "Aktuelle Ereignisse"
+    },
+    "featuresPanel": {
+      "badge": "Funktionen",
+      "title": "Leistungsstarke Funktionen",
+      "description": "Erstellen Sie Spiele schneller mit einer modernen, erweiterbaren und leistungsstarken Engine.",
+
+      "videos": [
+        {
+          "title": "Moderner Editor",
+          "description": "Erstellen Sie immersive Welten mit einem intuitiven Editor, der für maximale Produktivität entwickelt wurde."
+        },
+        {
+          "title": "Leistungsstarker Renderer",
+          "description": "Erleben Sie Echtzeit-Rendering auf Basis von Vulkan und OpenGL."
+        },
+        {
+          "title": "Flexibles Scripting",
+          "description": "Entwickeln Sie Gameplay mit Rust, C++, Python und anderen unterstützten Sprachen."
+        },
+        {
+          "title": "Erweiterte Physik",
+          "description": "Erstellen Sie realistische Simulationen mit modularen und anpassbaren Physiksystemen."
+        },
+        {
+          "title": "Plattformübergreifende Bereitstellung",
+          "description": "Exportieren Sie Ihre Projekte für Windows, Linux und andere unterstützte Plattformen."
+        }
+      ],
+
+      "previous": "Zurück",
+      "next": "Weiter"
+    },
+    "auth": {
+      "login": {
+        "title": "Willkommen zurück",
+        "subtitle": "Melden Sie sich an, um fortzufahren",
+        "emailLabel": "E-Mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Passwort",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "Angemeldet bleiben",
+        "forgotPassword": "Passwort vergessen",
+        "submit": "Anmelden",
+        "submitting": "Anmeldung läuft...",
+        "noAccountDivider": "Sie haben noch kein Konto?",
+        "noAccount": "Sie haben noch kein Konto?",
+        "registerLink": "Registrieren",
+        "orContinueWith": "Oder fortfahren mit"
+      },
+      "register": {
+        "title": "Konto erstellen",
+        "subtitle": "Treten Sie der Coreverse Engine-Community bei",
+        "usernameLabel": "Benutzername",
+        "usernamePlaceholder": "benutzername",
+        "emailLabel": "E-Mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Passwort",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Passwort bestätigen",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "Ich akzeptiere die <terms>Nutzungsbedingungen</terms>",
+        "submit": "Konto erstellen",
+        "submitting": "Konto wird erstellt...",
+        "successMessage": "Ihr Konto wurde erstellt! Bitte bestätigen Sie Ihre E-Mail-Adresse, bevor Sie fortfahren.",
+        "haveAccount": "Haben Sie bereits ein Konto?",
+        "loginLink": "Anmelden",
+        "avatar": {
+          "hint": "PNG, JPG oder WEBP · max. 8 MB",
+          "changePhoto": "Foto ändern",
+          "processing": "Wird verarbeitet...",
+          "remove": "Entfernen",
+          "invalidType": "Bitte wählen Sie eine Bilddatei aus.",
+          "tooLarge": "Die Datei ist zu groß (max. 8 MB).",
+          "processingFailed": "Das Bild konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "forgotPassword": {
+        "title": "Passwort vergessen?",
+        "subtitle": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.",
+        "emailLabel": "E-Mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "Link zum Zurücksetzen senden",
+        "submitting": "Wird gesendet...",
+        "successMessage": "Ein Link zum Zurücksetzen des Passworts wurde an Ihre E-Mail-Adresse gesendet.",
+        "backToLogin": "Zurück zur Anmeldung"
+      },
+      "resetPassword": {
+        "title": "Neues Passwort festlegen",
+        "subtitle": "Erstellen Sie ein neues Passwort für Ihr Konto",
+        "passwordLabel": "Neues Passwort",
+        "confirmPasswordLabel": "Neues Passwort bestätigen",
+        "submit": "Passwort aktualisieren",
+        "submitting": "Wird aktualisiert..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Mit Google fortfahren",
+        "continueWithGithub": "Mit GitHub fortfahren"
+      },
+      "welcomeEmail": {
+        "subject": "Willkommen bei Coreverse Engine!",
+        "body": "Hallo {username}, vielen Dank, dass Sie der Coreverse Engine-Familie beigetreten sind."
+      },
+      "errors": {
+        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "passwordMin": "Das Passwort muss mindestens 6 Zeichen lang sein.",
+        "usernameMin": "Der Benutzername muss mindestens 3 Zeichen lang sein.",
+        "usernameMax": "Der Benutzername darf höchstens 24 Zeichen lang sein.",
+        "usernamePattern": "Der Benutzername darf nur Buchstaben, Zahlen und Unterstriche enthalten.",
+        "passwordMismatch": "Die Passwörter stimmen nicht überein.",
+        "acceptTermsRequired": "Sie müssen die Bedingungen akzeptieren, um fortzufahren.",
+        "invalidCredentials": "Falsche E-Mail-Adresse oder falsches Passwort.",
+        "emailInUse": "Diese E-Mail-Adresse wird bereits verwendet.",
+        "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+        "avatarInvalid": "Das Profilbild ist ungültig oder zu groß."
+      }
+    }
+  },
+  "es": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "Núcleo y Universo"
+    },
+    "navigation": {
+      "main": "Principal",
+      "install": "Instalar",
+      "features": "Características",
+      "community": "Comunidad",
+      "faq": "Preguntas frecuentes",
+      "login": "Acceso"
+    },
+    "userMenu": {
+      "openMenu": "Menú de usuario",
+      "settings": "Configuración",
+      "logOut": "Cerrar sesión",
+      "loggingOut": "Cerrar sesión"
+    },
+    "theme": {
+      "light": "Cambiar al modo claro",
+      "dark": "Cambiar al modo oscuro"
+    },
+    "language": {
+      "label": "Cambiar idioma",
+      "english": "Inglés",
+      "turkish": "Turco",
+      "french": "Francés",
+      "german": "Alemán",
+      "spanish": "Español",
+      "portuguese": "Portugués",
+      "russian": "Ruso",
+      "chinese": "Chino",
+      "japanese": "Japonés",
+      "korean": "Coreano",
+      "polish": "Polaco",
+      "indian": "Indio",
+      "arabic": "Árabe"
+    },
+    "home": {
+      "eyebrow": "Motor de juegos de próxima generación",
+      "title": "Crea universos inmersivos con un motor rápido y moderno.",
+      "description": "Coreverse Engine, con sus sistemas de renderizado compatibles con Vulkan y OpenGL, ofrece a los desarrolladores la posibilidad de desarrollar utilizando C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift y TypeScript, además de proporcionar mejoras avanzadas del núcleo y la oportunidad de crear mundos con diferentes sistemas de física.",
+      "primaryAction": "Comenzar a crear",
+      "secondaryAction": "Explorar funciones",
+      "previewLabel": "Vista previa del entorno de ejecución",
+      "labName": "Laboratorio Coreverse",
+      "liveStatus": "En vivo",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "Objetivo de entorno de ejecución con alta capacidad de respuesta"
+        },
+        {
+          "value": "Modular",
+          "label": "Capas de renderizado y jugabilidad"
+        },
+        {
+          "value": "El creador es lo primero",
+          "label": "Herramientas diseñadas para la iteración"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Instalar Coreverse",
+      "title": "Elige tu ruta de compilación.",
+      "description": "Selecciona tu sistema operativo, elige una API gráfica y descarga el paquete provisional correspondiente.",
+      "osTitle": "Selecciona tu sistema operativo",
+      "osDescription": "Comienza con la plataforma donde se ejecutará Coreverse Engine.",
+      "graphicsTitle": "Selecciona tu API gráfica",
+      "graphicsDescription": "Elige Vulkan u OpenGL para el sistema operativo seleccionado.",
+      "downloadTitle": "Tu descarga está lista",
+      "downloadDescription": "La descarga actual es un marcador de posición en formato de texto. Los paquetes reales podrán sustituirlo más adelante.",
+      "selectedOs": "Sistema operativo",
+      "selectedGraphics": "API gráfica",
+      "downloadAction": "Descargar archivo de texto",
+      "back": "Atrás",
+      "steps": {
+        "os": {
+          "title": "Sistema operativo",
+          "description": "Windows, Linux o macOS"
+        },
+        "graphics": {
+          "title": "API gráfica",
+          "description": "Vulkan u OpenGL"
+        },
+        "download": {
+          "title": "Descargar",
+          "description": "Archivo de texto generado"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "Buscar",
+      "discussionBadge": "Comunidad",
+      "discussionTitle": "Debates y preguntas en tendencia",
+      "eventsBadge": "Lo último",
+      "eventsTitle": "Eventos recientes"
+    },
+    "featuresPanel": {
+      "badge": "Características",
+      "title": "Características Potentes",
+      "description": "Crea juegos más rápido con un motor moderno, extensible y de alto rendimiento.",
+
+      "videos": [
+        {
+          "title": "Editor Moderno",
+          "description": "Crea mundos inmersivos con un editor intuitivo diseñado para maximizar la productividad."
+        },
+        {
+          "title": "Renderizador de Alto Rendimiento",
+          "description": "Disfruta del renderizado en tiempo real impulsado por Vulkan y OpenGL."
+        },
+        {
+          "title": "Scripting Flexible",
+          "description": "Desarrolla la jugabilidad utilizando Rust, C++, Python y otros lenguajes compatibles."
+        },
+        {
+          "title": "Física Avanzada",
+          "description": "Crea simulaciones realistas con sistemas de física modulares y personalizables."
+        },
+        {
+          "title": "Despliegue Multiplataforma",
+          "description": "Exporta tus proyectos para Windows, Linux y otras plataformas compatibles."
+        }
+      ],
+
+      "previous": "Anterior",
+      "next": "Siguiente"
+    },
+    "auth": {
+      "login": {
+        "title": "Bienvenido de nuevo",
+        "subtitle": "Inicia sesión para continuar",
+        "emailLabel": "Correo electrónico",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Contraseña",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "Recuérdame",
+        "forgotPassword": "¿Olvidaste tu contraseña?",
+        "submit": "Iniciar sesión",
+        "submitting": "Iniciando sesión...",
+        "noAccountDivider": "¿No tienes una cuenta?",
+        "noAccount": "¿Aún no tienes una cuenta?",
+        "registerLink": "Regístrate",
+        "orContinueWith": "O continúa con"
+      },
+      "register": {
+        "title": "Crear una cuenta",
+        "subtitle": "Únete a la comunidad de Coreverse Engine",
+        "usernameLabel": "Nombre de usuario",
+        "usernamePlaceholder": "nombredeusuario",
+        "emailLabel": "Correo electrónico",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Contraseña",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Confirmar contraseña",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "Acepto los <terms>Términos del Servicio</terms>",
+        "submit": "Crear cuenta",
+        "submitting": "Creando cuenta...",
+        "successMessage": "¡Tu cuenta ha sido creada! Verifica tu correo electrónico antes de continuar.",
+        "haveAccount": "¿Ya tienes una cuenta?",
+        "loginLink": "Iniciar sesión",
+        "avatar": {
+          "hint": "PNG, JPG o WEBP · máx. 8 MB",
+          "changePhoto": "Cambiar foto",
+          "processing": "Procesando...",
+          "remove": "Eliminar",
+          "invalidType": "Por favor, selecciona un archivo de imagen.",
+          "tooLarge": "El archivo es demasiado grande (máx. 8 MB).",
+          "processingFailed": "No se pudo procesar la imagen. Inténtalo de nuevo."
+        }
+      },
+      "forgotPassword": {
+        "title": "¿Olvidaste tu contraseña?",
+        "subtitle": "Introduce tu dirección de correo electrónico y te enviaremos un enlace para restablecer tu contraseña",
+        "emailLabel": "Correo electrónico",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "Enviar enlace de restablecimiento",
+        "submitting": "Enviando...",
+        "successMessage": "Se ha enviado un enlace para restablecer la contraseña a tu correo electrónico.",
+        "backToLogin": "Volver al inicio de sesión"
+      },
+      "resetPassword": {
+        "title": "Establecer una nueva contraseña",
+        "subtitle": "Crea una nueva contraseña para tu cuenta",
+        "passwordLabel": "Nueva contraseña",
+        "confirmPasswordLabel": "Confirmar nueva contraseña",
+        "submit": "Actualizar contraseña",
+        "submitting": "Actualizando..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Continuar con Google",
+        "continueWithGithub": "Continuar con GitHub"
+      },
+      "welcomeEmail": {
+        "subject": "¡Bienvenido a Coreverse Engine!",
+        "body": "Hola {username}, gracias por unirte a la familia de Coreverse Engine."
+      },
+      "errors": {
+        "emailInvalid": "Por favor, introduce una dirección de correo electrónico válida.",
+        "passwordMin": "La contraseña debe tener al menos 6 caracteres.",
+        "usernameMin": "El nombre de usuario debe tener al menos 3 caracteres.",
+        "usernameMax": "El nombre de usuario puede tener hasta 24 caracteres.",
+        "usernamePattern": "El nombre de usuario solo puede contener letras, números y guiones bajos.",
+        "passwordMismatch": "Las contraseñas no coinciden.",
+        "acceptTermsRequired": "Debes aceptar los términos para continuar.",
+        "invalidCredentials": "Correo electrónico o contraseña incorrectos.",
+        "emailInUse": "Este correo electrónico ya está en uso.",
+        "generic": "Algo salió mal. Por favor, inténtalo de nuevo.",
+        "avatarInvalid": "La foto de perfil no es válida o es demasiado grande."
+      }
+    }
+  },
+  "pt": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "Núcleo & Universo"
+    },
+    "navigation": {
+      "main": "Principal",
+      "install": "Instalar",
+      "features": "Funcionalidades",
+      "community": "Comunidade",
+      "faq": "FAQ",
+      "login": "Conecte-se"
+    },
+    "userMenu": {
+      "openMenu": "Menu do Utilizador",
+      "settings": "Definições",
+      "logOut": "Sair",
+      "loggingOut": "Efetuando Logout"
+    },
+    "theme": {
+      "light": "Mudar para o modo claro",
+      "dark": "Mudar para o modo escuro"
+    },
+    "language": {
+      "label": "Alterar idioma",
+      "english": "Inglês",
+      "turkish": "Turco",
+      "french": "Francês",
+      "german": "Alemão",
+      "spanish": "Espanhol",
+      "portuguese": "Português",
+      "russian": "Russo",
+      "chinese": "Chinês",
+      "japanese": "Japonês",
+      "korean": "Coreano",
+      "polish": "Polaco",
+      "indian": "Indiano",
+      "arabic": "Árabe"
+    },
+    "home": {
+      "eyebrow": "Motor de jogos da próxima geração",
+      "title": "Crie universos imersivos com um motor rápido e moderno.",
+      "description": "O Coreverse Engine, com os seus sistemas de renderização compatíveis com Vulkan e OpenGL, oferece aos programadores a possibilidade de desenvolver em C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift e TypeScript, proporcionando também melhorias avançadas no núcleo e a oportunidade de criar mundos com diferentes sistemas de física.",
+      "primaryAction": "Começar a criar",
+      "secondaryAction": "Explorar funcionalidades",
+      "previewLabel": "Pré-visualização em tempo de execução",
+      "labName": "Laboratório Coreverse",
+      "liveStatus": "Em direto",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "Objetivo de tempo de execução responsivo"
+        },
+        {
+          "value": "Modular",
+          "label": "Camadas de renderização e jogabilidade"
+        },
+        {
+          "value": "Prioridade aos criadores",
+          "label": "Ferramentas concebidas para iteração"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Instalar o Coreverse",
+      "title": "Escolha o seu caminho de compilação.",
+      "description": "Selecione o seu sistema operativo, escolha uma API gráfica e transfira o pacote de exemplo correspondente.",
+      "osTitle": "Selecione o seu sistema operativo",
+      "osDescription": "Comece pela plataforma onde o Coreverse Engine será executado.",
+      "graphicsTitle": "Selecione a sua API gráfica",
+      "graphicsDescription": "Escolha Vulkan ou OpenGL para o sistema operativo selecionado.",
+      "downloadTitle": "A sua transferência está pronta",
+      "downloadDescription": "A transferência atual é um ficheiro de texto de exemplo. Os pacotes reais poderão substituí-lo mais tarde.",
+      "selectedOs": "Sistema operativo",
+      "selectedGraphics": "API gráfica",
+      "downloadAction": "Transferir ficheiro de texto",
+      "back": "Voltar",
+      "steps": {
+        "os": {
+          "title": "Sistema operativo",
+          "description": "Windows, Linux ou macOS"
+        },
+        "graphics": {
+          "title": "API gráfica",
+          "description": "Vulkan ou OpenGL"
+        },
+        "download": {
+          "title": "Transferência",
+          "description": "Ficheiro de texto gerado"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "Pesquisar",
+      "discussionBadge": "Comunidade",
+      "discussionTitle": "Discussões e Perguntas em Tendência",
+      "eventsBadge": "Mais Recentes",
+      "eventsTitle": "Eventos Recentes"
+    },
+    "featuresPanel": {
+      "badge": "Funcionalidades",
+      "title": "Funcionalidades Poderosas",
+      "description": "Crie jogos mais rapidamente com um motor moderno, extensível e de elevado desempenho.",
+
+      "videos": [
+        {
+          "title": "Editor Moderno",
+          "description": "Crie mundos imersivos com um editor intuitivo concebido para máxima produtividade."
+        },
+        {
+          "title": "Renderizador de Elevado Desempenho",
+          "description": "Desfrute de renderização em tempo real com tecnologia Vulkan e OpenGL."
+        },
+        {
+          "title": "Programação Flexível",
+          "description": "Desenvolva a jogabilidade utilizando Rust, C++, Python e outras linguagens suportadas."
+        },
+        {
+          "title": "Física Avançada",
+          "description": "Crie simulações realistas com sistemas de física modulares e personalizáveis."
+        },
+        {
+          "title": "Implementação Multiplataforma",
+          "description": "Exporte os seus projetos para Windows, Linux e outras plataformas suportadas."
+        }
+      ],
+
+      "previous": "Anterior",
+      "next": "Seguinte"
+    },
+    "auth": {
+      "login": {
+        "title": "Bem-vindo de volta",
+        "subtitle": "Inicie sessão para continuar",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Palavra-passe",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "Lembrar-me",
+        "forgotPassword": "Esqueceu-se da palavra-passe",
+        "submit": "Iniciar sessão",
+        "submitting": "A iniciar sessão...",
+        "noAccountDivider": "Não tem uma conta?",
+        "noAccount": "Ainda não tem uma conta?",
+        "registerLink": "Registar-se",
+        "orContinueWith": "Ou continue com"
+      },
+      "register": {
+        "title": "Criar uma conta",
+        "subtitle": "Junte-se à comunidade Coreverse Engine",
+        "usernameLabel": "Nome de utilizador",
+        "usernamePlaceholder": "nomeutilizador",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Palavra-passe",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Confirmar palavra-passe",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "Aceito os <terms>Termos de Serviço</terms>",
+        "submit": "Criar conta",
+        "submitting": "A criar conta...",
+        "successMessage": "A sua conta foi criada! Verifique o seu e-mail antes de continuar.",
+        "haveAccount": "Já tem uma conta?",
+        "loginLink": "Iniciar sessão",
+        "avatar": {
+          "hint": "PNG, JPG ou WEBP · máx. 8 MB",
+          "changePhoto": "Alterar fotografia",
+          "processing": "A processar...",
+          "remove": "Remover",
+          "invalidType": "Selecione um ficheiro de imagem.",
+          "tooLarge": "O ficheiro é demasiado grande (máx. 8 MB).",
+          "processingFailed": "Não foi possível processar a imagem. Tente novamente."
+        }
+      },
+      "forgotPassword": {
+        "title": "Esqueceu-se da sua palavra-passe?",
+        "subtitle": "Introduza o seu endereço de e-mail e enviar-lhe-emos uma ligação para redefinir a palavra-passe",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "Enviar ligação de redefinição",
+        "submitting": "A enviar...",
+        "successMessage": "Foi enviada uma ligação para redefinir a palavra-passe para o seu e-mail.",
+        "backToLogin": "Voltar ao início de sessão"
+      },
+      "resetPassword": {
+        "title": "Definir uma nova palavra-passe",
+        "subtitle": "Crie uma nova palavra-passe para a sua conta",
+        "passwordLabel": "Nova palavra-passe",
+        "confirmPasswordLabel": "Confirmar nova palavra-passe",
+        "submit": "Atualizar palavra-passe",
+        "submitting": "A atualizar..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Continuar com o Google",
+        "continueWithGithub": "Continuar com o GitHub"
+      },
+      "welcomeEmail": {
+        "subject": "Bem-vindo ao Coreverse Engine!",
+        "body": "Olá {username}, obrigado por se juntar à família Coreverse Engine."
+      },
+      "errors": {
+        "emailInvalid": "Introduza um endereço de e-mail válido.",
+        "passwordMin": "A palavra-passe deve ter pelo menos 6 caracteres.",
+        "usernameMin": "O nome de utilizador deve ter pelo menos 3 caracteres.",
+        "usernameMax": "O nome de utilizador pode ter até 24 caracteres.",
+        "usernamePattern": "O nome de utilizador só pode conter letras, números e sublinhados.",
+        "passwordMismatch": "As palavras-passe não coincidem.",
+        "acceptTermsRequired": "Tem de aceitar os termos para continuar.",
+        "invalidCredentials": "E-mail ou palavra-passe incorretos.",
+        "emailInUse": "Este e-mail já está a ser utilizado.",
+        "generic": "Ocorreu um erro. Tente novamente.",
+        "avatarInvalid": "A imagem de perfil é inválida ou demasiado grande."
+      }
+    }
+  },
+  "cn": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "核心与宇宙"
+    },
+    "navigation": {
+      "main": "主页",
+      "install": "安装",
+      "features": "功能",
+      "community": "社区",
+      "faq": "常见问题",
+      "login": "登录"
+    },
+    "userMenu": {
+      "openMenu": "用户菜单",
+      "settings": "设置",
+      "logOut": "注销",
+      "loggingOut": "正在注销"
+    },
+    "theme": {
+      "light": "切换到浅色模式",
+      "dark": "切换到深色模式"
+    },
+    "language": {
+      "label": "更改语言",
+      "english": "英语",
+      "turkish": "土耳其语",
+      "french": "法语",
+      "german": "德语",
+      "spanish": "西班牙语",
+      "portuguese": "葡萄牙语",
+      "russian": "俄语",
+      "chinese": "中文",
+      "japanese": "日语",
+      "korean": "韩语",
+      "polish": "波兰语",
+      "indian": "印度语",
+      "arabic": "阿拉伯语"
+    },
+    "home": {
+      "eyebrow": "新一代游戏引擎",
+      "title": "使用快速、现代化的引擎构建沉浸式宇宙。",
+      "description": "Coreverse Engine 凭借支持 Vulkan 和 OpenGL 的渲染系统，为开发者提供使用 C、C++、C#、Dart、Java、JavaScript、Kotlin、Swift 和 TypeScript 进行开发的能力，同时还提供先进的核心增强功能以及创建采用不同物理系统世界的机会。",
+      "primaryAction": "开始构建",
+      "secondaryAction": "探索功能",
+      "previewLabel": "运行时预览",
+      "labName": "Coreverse 实验室",
+      "liveStatus": "在线",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "响应式运行时目标"
+        },
+        {
+          "value": "模块化",
+          "label": "渲染与游戏层"
+        },
+        {
+          "value": "创作者优先",
+          "label": "为迭代而设计的工具"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "安装 Coreverse",
+      "title": "选择您的构建路径。",
+      "description": "选择您的操作系统，挑选图形 API，并下载对应的占位程序包。",
+      "osTitle": "选择您的操作系统",
+      "osDescription": "从 Coreverse Engine 将运行的平台开始。",
+      "graphicsTitle": "选择您的图形 API",
+      "graphicsDescription": "为所选操作系统选择 Vulkan 或 OpenGL。",
+      "downloadTitle": "您的下载已准备就绪",
+      "downloadDescription": "当前下载的是一个文本占位文件，之后可替换为真实程序包。",
+      "selectedOs": "操作系统",
+      "selectedGraphics": "图形 API",
+      "downloadAction": "下载文本文件",
+      "back": "返回",
+      "steps": {
+        "os": {
+          "title": "操作系统",
+          "description": "Windows、Linux 或 macOS"
+        },
+        "graphics": {
+          "title": "图形 API",
+          "description": "Vulkan 或 OpenGL"
+        },
+        "download": {
+          "title": "下载",
+          "description": "生成的文本文件"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "搜索",
+      "discussionBadge": "社区",
+      "discussionTitle": "热门讨论与问题",
+      "eventsBadge": "最新",
+      "eventsTitle": "近期事件"
+    },
+    "featuresPanel": {
+      "badge": "功能",
+      "title": "强大功能",
+      "description": "使用现代化、可扩展且高性能的引擎，更快地构建游戏。",
+
+      "videos": [
+        {
+          "title": "现代编辑器",
+          "description": "使用专为提高生产力而设计的直观编辑器，创建沉浸式世界。"
+        },
+        {
+          "title": "高性能渲染器",
+          "description": "体验由 Vulkan 和 OpenGL 驱动的实时渲染。"
+        },
+        {
+          "title": "灵活脚本",
+          "description": "使用 Rust、C++、Python 以及其他受支持的语言开发游戏玩法。"
+        },
+        {
+          "title": "高级物理",
+          "description": "借助模块化且可自定义的物理系统，创建逼真的模拟效果。"
+        },
+        {
+          "title": "跨平台部署",
+          "description": "将您的项目导出到 Windows、Linux 以及其他受支持的平台。"
+        }
+      ],
+
+      "previous": "上一项",
+      "next": "下一项"
+    },
+    "auth": {
+      "login": {
+        "title": "欢迎回来",
+        "subtitle": "登录以继续",
+        "emailLabel": "电子邮箱",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "密码",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "记住我",
+        "forgotPassword": "忘记密码",
+        "submit": "登录",
+        "submitting": "正在登录...",
+        "noAccountDivider": "还没有账户？",
+        "noAccount": "还没有账户吗？",
+        "registerLink": "注册",
+        "orContinueWith": "或使用以下方式继续"
+      },
+      "register": {
+        "title": "创建账户",
+        "subtitle": "加入 Coreverse Engine 社区",
+        "usernameLabel": "用户名",
+        "usernamePlaceholder": "username",
+        "emailLabel": "电子邮箱",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "密码",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "确认密码",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "我接受<terms>服务条款</terms>",
+        "submit": "创建账户",
+        "submitting": "正在创建账户...",
+        "successMessage": "您的账户已创建！请先验证您的电子邮箱后再继续。",
+        "haveAccount": "已经有账户了？",
+        "loginLink": "登录",
+        "avatar": {
+          "hint": "PNG、JPG 或 WEBP · 最大 8MB",
+          "changePhoto": "更换照片",
+          "processing": "处理中...",
+          "remove": "移除",
+          "invalidType": "请选择图片文件。",
+          "tooLarge": "文件过大（最大 8MB）。",
+          "processingFailed": "图片无法处理。请重试。"
+        }
+      },
+      "forgotPassword": {
+        "title": "忘记密码？",
+        "subtitle": "请输入您的电子邮箱地址，我们将向您发送密码重置链接",
+        "emailLabel": "电子邮箱",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "发送重置链接",
+        "submitting": "正在发送...",
+        "successMessage": "密码重置链接已发送到您的电子邮箱。",
+        "backToLogin": "返回登录"
+      },
+      "resetPassword": {
+        "title": "设置新密码",
+        "subtitle": "为您的账户创建一个新密码",
+        "passwordLabel": "新密码",
+        "confirmPasswordLabel": "确认新密码",
+        "submit": "更新密码",
+        "submitting": "正在更新..."
+      },
+      "oauth": {
+        "continueWithGoogle": "使用 Google 继续",
+        "continueWithGithub": "使用 GitHub 继续"
+      },
+      "welcomeEmail": {
+        "subject": "欢迎加入 Coreverse Engine！",
+        "body": "您好，{username}，感谢您加入 Coreverse Engine 大家庭。"
+      },
+      "errors": {
+        "emailInvalid": "请输入有效的电子邮箱地址。",
+        "passwordMin": "密码长度至少需要 6 个字符。",
+        "usernameMin": "用户名长度至少需要 3 个字符。",
+        "usernameMax": "用户名最多可包含 24 个字符。",
+        "usernamePattern": "用户名只能包含字母、数字和下划线。",
+        "passwordMismatch": "两次输入的密码不一致。",
+        "acceptTermsRequired": "您必须接受服务条款才能继续。",
+        "invalidCredentials": "电子邮箱或密码错误。",
+        "emailInUse": "该电子邮箱已被使用。",
+        "generic": "发生了一些错误。请重试。",
+        "avatarInvalid": "个人资料图片无效或过大。"
+      }
+    }
+  },
+  "ru": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "Ядро и Вселенная"
+    },
+    "navigation": {
+      "main": "Главная",
+      "install": "Установка",
+      "features": "Функции",
+      "community": "Сообщество",
+      "faq": "Часто задаваемые вопросы",
+      "login": "Вход"
+    },
+    "userMenu": {
+      "openMenu": "Пользовательское меню",
+      "settings": "Настройки",
+      "logOut": "Выход",
+      "loggingOut": "Выход из системы"
+    },
+    "theme": {
+      "light": "Переключиться на светлую тему",
+      "dark": "Переключиться на тёмную тему"
+    },
+    "language": {
+      "label": "Изменить язык",
+      "english": "Английский",
+      "turkish": "Турецкий",
+      "french": "Французский",
+      "german": "Немецкий",
+      "spanish": "Испанский",
+      "portuguese": "Португальский",
+      "russian": "Русский",
+      "chinese": "Китайский",
+      "japanese": "Японский",
+      "korean": "Корейский",
+      "polish": "Польский",
+      "indian": "Индийский",
+      "arabic": "Арабский"
+    },
+    "home": {
+      "eyebrow": "Игровой движок нового поколения",
+      "title": "Создавайте захватывающие вселенные с помощью быстрого современного движка.",
+      "description": "Coreverse Engine с системами рендеринга, поддерживающими Vulkan и OpenGL, предоставляет разработчикам возможность создавать проекты на C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift и TypeScript, а также предлагает расширенные возможности ядра и создание миров с различными физическими системами.",
+      "primaryAction": "Начать разработку",
+      "secondaryAction": "Изучить возможности",
+      "previewLabel": "Предварительный просмотр во время выполнения",
+      "labName": "Лаборатория Coreverse",
+      "liveStatus": "В эфире",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "Целевая отзывчивость среды выполнения"
+        },
+        {
+          "value": "Модульная",
+          "label": "Слои рендеринга и игрового процесса"
+        },
+        {
+          "value": "В первую очередь для создателей",
+          "label": "Инструменты, разработанные для итераций"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Установить Coreverse",
+      "title": "Выберите путь сборки.",
+      "description": "Выберите операционную систему, графический API и загрузите соответствующий демонстрационный пакет.",
+      "osTitle": "Выберите операционную систему",
+      "osDescription": "Начните с платформы, на которой будет работать Coreverse Engine.",
+      "graphicsTitle": "Выберите графический API",
+      "graphicsDescription": "Выберите Vulkan или OpenGL для выбранной операционной системы.",
+      "downloadTitle": "Ваша загрузка готова",
+      "downloadDescription": "Текущая загрузка представляет собой текстовую заглушку. Позже её можно заменить настоящими пакетами.",
+      "selectedOs": "Операционная система",
+      "selectedGraphics": "Графический API",
+      "downloadAction": "Скачать текстовый файл",
+      "back": "Назад",
+      "steps": {
+        "os": {
+          "title": "Операционная система",
+          "description": "Windows, Linux или macOS"
+        },
+        "graphics": {
+          "title": "Графический API",
+          "description": "Vulkan или OpenGL"
+        },
+        "download": {
+          "title": "Скачать",
+          "description": "Сгенерированный текстовый файл"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "Поиск",
+      "discussionBadge": "Сообщество",
+      "discussionTitle": "Обсуждения и вопросы по трендам",
+      "eventsBadge": "Последние",
+      "eventsTitle": "Недавние события"
+    },
+    "featuresPanel": {
+      "badge": "Функции",
+      "title": "Мощные возможности",
+      "description": "Создавайте игры быстрее с помощью современного, расширяемого и высокопроизводительного движка.",
+
+      "videos": [
+        {
+          "title": "Современный редактор",
+          "description": "Создавайте захватывающие миры с помощью интуитивно понятного редактора, разработанного для максимальной продуктивности."
+        },
+        {
+          "title": "Высокопроизводительный рендерер",
+          "description": "Оцените рендеринг в реальном времени на базе Vulkan и OpenGL."
+        },
+        {
+          "title": "Гибкое написание сценариев",
+          "description": "Разрабатывайте игровой процесс с использованием Rust, C++, Python и других поддерживаемых языков."
+        },
+        {
+          "title": "Продвинутая физика",
+          "description": "Создавайте реалистичные симуляции с помощью модульных и настраиваемых физических систем."
+        },
+        {
+          "title": "Кроссплатформенное развертывание",
+          "description": "Экспортируйте свои проекты для Windows, Linux и других поддерживаемых платформ."
+        }
+      ],
+
+      "previous": "Предыдущий",
+      "next": "Следующий"
+    },
+    "auth": {
+      "login": {
+        "title": "С возвращением",
+        "subtitle": "Войдите, чтобы продолжить",
+        "emailLabel": "Электронная почта",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Пароль",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "Запомнить меня",
+        "forgotPassword": "Забыли пароль",
+        "submit": "Войти",
+        "submitting": "Выполняется вход...",
+        "noAccountDivider": "Нет аккаунта?",
+        "noAccount": "Ещё нет аккаунта?",
+        "registerLink": "Зарегистрироваться",
+        "orContinueWith": "Или продолжить с помощью"
+      },
+      "register": {
+        "title": "Создать аккаунт",
+        "subtitle": "Присоединяйтесь к сообществу Coreverse Engine",
+        "usernameLabel": "Имя пользователя",
+        "usernamePlaceholder": "username",
+        "emailLabel": "Электронная почта",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Пароль",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Подтвердите пароль",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "Я принимаю <terms>Условия использования</terms>",
+        "submit": "Создать аккаунт",
+        "submitting": "Создание аккаунта...",
+        "successMessage": "Ваш аккаунт создан! Пожалуйста, подтвердите свою электронную почту перед продолжением.",
+        "haveAccount": "Уже есть аккаунт?",
+        "loginLink": "Войти",
+        "avatar": {
+          "hint": "PNG, JPG или WEBP · макс. 8 МБ",
+          "changePhoto": "Изменить фото",
+          "processing": "Обработка...",
+          "remove": "Удалить",
+          "invalidType": "Пожалуйста, выберите файл изображения.",
+          "tooLarge": "Файл слишком большой (макс. 8 МБ).",
+          "processingFailed": "Не удалось обработать изображение. Пожалуйста, попробуйте снова."
+        }
+      },
+      "forgotPassword": {
+        "title": "Забыли пароль?",
+        "subtitle": "Введите адрес электронной почты, и мы отправим вам ссылку для сброса пароля",
+        "emailLabel": "Электронная почта",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "Отправить ссылку для сброса",
+        "submitting": "Отправка...",
+        "successMessage": "Ссылка для сброса пароля была отправлена на вашу электронную почту.",
+        "backToLogin": "Вернуться ко входу"
+      },
+      "resetPassword": {
+        "title": "Установить новый пароль",
+        "subtitle": "Создайте новый пароль для своей учётной записи",
+        "passwordLabel": "Новый пароль",
+        "confirmPasswordLabel": "Подтвердите новый пароль",
+        "submit": "Обновить пароль",
+        "submitting": "Обновление..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Продолжить с Google",
+        "continueWithGithub": "Продолжить с GitHub"
+      },
+      "welcomeEmail": {
+        "subject": "Добро пожаловать в Coreverse Engine!",
+        "body": "Здравствуйте, {username}! Спасибо, что присоединились к семье Coreverse Engine."
+      },
+      "errors": {
+        "emailInvalid": "Пожалуйста, введите действительный адрес электронной почты.",
+        "passwordMin": "Пароль должен содержать не менее 6 символов.",
+        "usernameMin": "Имя пользователя должно содержать не менее 3 символов.",
+        "usernameMax": "Имя пользователя может содержать до 24 символов.",
+        "usernamePattern": "Имя пользователя может содержать только буквы, цифры и символы подчёркивания.",
+        "passwordMismatch": "Пароли не совпадают.",
+        "acceptTermsRequired": "Вы должны принять условия, чтобы продолжить.",
+        "invalidCredentials": "Неверный адрес электронной почты или пароль.",
+        "emailInUse": "Этот адрес электронной почты уже используется.",
+        "generic": "Что-то пошло не так. Пожалуйста, попробуйте снова.",
+        "avatarInvalid": "Изображение профиля недействительно или слишком большое."
+      }
+    }
+  },
+  "jp": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "コアとユニバース"
+    },
+    "navigation": {
+      "main": "メイン",
+      "install": "インストール",
+      "features": "機能",
+      "community": "コミュニティ",
+      "faq": "よくある質問",
+      "login": "ログイン"
+    },
+    "userMenu": {
+      "openMenu": "ユーザーメニュー",
+      "settings": "設定",
+      "logOut": "ログアウト",
+      "loggingOut": "ログアウト"
+    },
+    "theme": {
+      "light": "ライトモードに切り替え",
+      "dark": "ダークモードに切り替え"
+    },
+    "language": {
+      "label": "言語を変更",
+      "english": "英語",
+      "turkish": "トルコ語",
+      "french": "フランス語",
+      "german": "ドイツ語",
+      "spanish": "スペイン語",
+      "portuguese": "ポルトガル語",
+      "russian": "ロシア語",
+      "chinese": "中国語",
+      "japanese": "日本語",
+      "korean": "韓国語",
+      "polish": "ポーランド語",
+      "indian": "インド語",
+      "arabic": "アラビア語"
+    },
+    "home": {
+      "eyebrow": "次世代ゲームエンジン",
+      "title": "高速でモダンなエンジンで、没入感あふれるユニバースを構築しましょう。",
+      "description": "Coreverse Engine は、Vulkan および OpenGL に対応したレンダラーシステムを備え、開発者が C、C++、C#、Dart、Java、JavaScript、Kotlin、Swift、TypeScript を使用して開発できるようにするとともに、高度なコア機能の強化や、異なる物理システムを備えた世界を作成する機会を提供します。",
+      "primaryAction": "開発を始める",
+      "secondaryAction": "機能を見る",
+      "previewLabel": "ランタイムプレビュー",
+      "labName": "Coreverse Laboratory",
+      "liveStatus": "稼働中",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "応答性の高いランタイム目標"
+        },
+        {
+          "value": "モジュール式",
+          "label": "レンダリングとゲームプレイのレイヤー"
+        },
+        {
+          "value": "クリエイターファースト",
+          "label": "反復開発のために設計されたツール"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Coreverse をインストール",
+      "title": "ビルド方法を選択してください。",
+      "description": "オペレーティングシステムを選択し、グラフィックス API を選んで、対応するプレースホルダーパッケージをダウンロードしてください。",
+      "osTitle": "オペレーティングシステムを選択",
+      "osDescription": "Coreverse Engine を実行するプラットフォームから始めましょう。",
+      "graphicsTitle": "グラフィックス API を選択",
+      "graphicsDescription": "選択したオペレーティングシステムに対して Vulkan または OpenGL を選択してください。",
+      "downloadTitle": "ダウンロードの準備ができました",
+      "downloadDescription": "現在のダウンロードはテキストのプレースホルダーです。後で実際のパッケージに置き換えることができます。",
+      "selectedOs": "オペレーティングシステム",
+      "selectedGraphics": "グラフィックス API",
+      "downloadAction": "テキストファイルをダウンロード",
+      "back": "戻る",
+      "steps": {
+        "os": {
+          "title": "オペレーティングシステム",
+          "description": "Windows、Linux、または macOS"
+        },
+        "graphics": {
+          "title": "グラフィックス API",
+          "description": "Vulkan または OpenGL"
+        },
+        "download": {
+          "title": "ダウンロード",
+          "description": "生成されたテキストファイル"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "検索",
+      "discussionBadge": "コミュニティ",
+      "discussionTitle": "トレンドの議論と質問",
+      "eventsBadge": "最新",
+      "eventsTitle": "最近のイベント"
+    },
+    "featuresPanel": {
+      "badge": "機能",
+      "title": "強力な機能",
+      "description": "モダンで拡張性が高く、高性能なエンジンでゲーム開発をより迅速に行えます。",
+
+      "videos": [
+        {
+          "title": "モダンエディター",
+          "description": "最大限の生産性を実現するために設計された直感的なエディターで、没入感のある世界を作りましょう。"
+        },
+        {
+          "title": "高性能レンダラー",
+          "description": "Vulkan と OpenGL によるリアルタイムレンダリングを体験できます。"
+        },
+        {
+          "title": "柔軟なスクリプティング",
+          "description": "Rust、C++、Python、およびその他の対応言語を使用してゲームプレイを開発できます。"
+        },
+        {
+          "title": "高度な物理演算",
+          "description": "モジュール化され、カスタマイズ可能な物理演算システムで、リアルなシミュレーションを作成できます。"
+        },
+        {
+          "title": "クロスプラットフォーム展開",
+          "description": "Windows、Linux、およびその他の対応プラットフォーム向けにプロジェクトをエクスポートできます。"
+        }
+      ],
+
+      "previous": "前へ",
+      "next": "次へ"
+    },
+    "auth": {
+      "login": {
+        "title": "おかえりなさい",
+        "subtitle": "続行するにはサインインしてください",
+        "emailLabel": "メールアドレス",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "パスワード",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "ログイン状態を保持する",
+        "forgotPassword": "パスワードをお忘れですか",
+        "submit": "サインイン",
+        "submitting": "サインイン中...",
+        "noAccountDivider": "アカウントをお持ちではありませんか？",
+        "noAccount": "まだアカウントをお持ちではありませんか？",
+        "registerLink": "新規登録",
+        "orContinueWith": "または次の方法で続行"
+      },
+      "register": {
+        "title": "アカウントを作成",
+        "subtitle": "Coreverse Engine コミュニティに参加しましょう",
+        "usernameLabel": "ユーザー名",
+        "usernamePlaceholder": "username",
+        "emailLabel": "メールアドレス",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "パスワード",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "パスワードを確認",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "<terms>利用規約</terms>に同意します",
+        "submit": "アカウントを作成",
+        "submitting": "アカウントを作成中...",
+        "successMessage": "アカウントが作成されました！続行する前にメールアドレスを確認してください。",
+        "haveAccount": "すでにアカウントをお持ちですか？",
+        "loginLink": "サインイン",
+        "avatar": {
+          "hint": "PNG、JPG、またはWEBP・最大8MB",
+          "changePhoto": "写真を変更",
+          "processing": "処理中...",
+          "remove": "削除",
+          "invalidType": "画像ファイルを選択してください。",
+          "tooLarge": "ファイルが大きすぎます（最大8MB）。",
+          "processingFailed": "画像を処理できませんでした。もう一度お試しください。"
+        }
+      },
+      "forgotPassword": {
+        "title": "パスワードをお忘れですか？",
+        "subtitle": "メールアドレスを入力すると、パスワード再設定用のリンクをお送りします",
+        "emailLabel": "メールアドレス",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "再設定リンクを送信",
+        "submitting": "送信中...",
+        "successMessage": "パスワード再設定用のリンクをメールに送信しました。",
+        "backToLogin": "サインインに戻る"
+      },
+      "resetPassword": {
+        "title": "新しいパスワードを設定",
+        "subtitle": "アカウント用の新しいパスワードを作成してください",
+        "passwordLabel": "新しいパスワード",
+        "confirmPasswordLabel": "新しいパスワードを確認",
+        "submit": "パスワードを更新",
+        "submitting": "更新中..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Googleで続行",
+        "continueWithGithub": "GitHubで続行"
+      },
+      "welcomeEmail": {
+        "subject": "Coreverse Engineへようこそ！",
+        "body": "こんにちは {username} さん、Coreverse Engine ファミリーへご参加いただきありがとうございます。"
+      },
+      "errors": {
+        "emailInvalid": "有効なメールアドレスを入力してください。",
+        "passwordMin": "パスワードは6文字以上である必要があります。",
+        "usernameMin": "ユーザー名は3文字以上である必要があります。",
+        "usernameMax": "ユーザー名は24文字以内で入力してください。",
+        "usernamePattern": "ユーザー名には英字、数字、アンダースコアのみ使用できます。",
+        "passwordMismatch": "パスワードが一致しません。",
+        "acceptTermsRequired": "続行するには利用規約に同意する必要があります。",
+        "invalidCredentials": "メールアドレスまたはパスワードが正しくありません。",
+        "emailInUse": "このメールアドレスはすでに使用されています。",
+        "generic": "問題が発生しました。もう一度お試しください。",
+        "avatarInvalid": "プロフィール画像が無効であるか、サイズが大きすぎます。"
+      }
+    }
+  },
+  "kr": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "코어 & 유니버스"
+    },
+    "navigation": {
+      "main": "메인",
+      "install": "설치",
+      "features": "특징",
+      "community": "커뮤니티",
+      "faq": "자주 묻는 질문",
+      "login": "로그인"
+    },
+    "userMenu": {
+      "openMenu": "사용자 메뉴",
+      "settings": "설정",
+      "logOut": "로그아웃",
+      "loggingOut": "로그아웃 중"
+    },
+    "theme": {
+      "light": "라이트 모드로 전환",
+      "dark": "다크 모드로 전환"
+    },
+    "language": {
+      "label": "언어 변경",
+      "english": "영어",
+      "turkish": "터키어",
+      "french": "프랑스어",
+      "german": "독일어",
+      "spanish": "스페인어",
+      "portuguese": "포르투갈어",
+      "russian": "러시아어",
+      "chinese": "중국어",
+      "japanese": "일본어",
+      "korean": "한국어",
+      "polish": "폴란드어",
+      "indian": "인도어",
+      "arabic": "아랍어"
+    },
+    "home": {
+      "eyebrow": "차세대 게임 엔진",
+      "title": "빠르고 현대적인 엔진으로 몰입감 넘치는 세계를 구축하세요.",
+      "description": "Coreverse Engine은 Vulkan 및 OpenGL을 지원하는 렌더러 시스템을 통해 개발자가 C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift, TypeScript를 사용하여 개발할 수 있도록 지원하며, 향상된 코어 기능과 다양한 물리 시스템을 활용한 세계를 제작할 수 있는 기회를 제공합니다.",
+      "primaryAction": "개발 시작",
+      "secondaryAction": "기능 살펴보기",
+      "previewLabel": "런타임 미리보기",
+      "labName": "Coreverse 연구소",
+      "liveStatus": "실행 중",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "반응형 런타임 목표"
+        },
+        {
+          "value": "모듈식",
+          "label": "렌더링 및 게임플레이 계층"
+        },
+        {
+          "value": "크리에이터 중심",
+          "label": "반복 작업을 위해 설계된 도구"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Coreverse 설치",
+      "title": "빌드 경로를 선택하세요.",
+      "description": "운영 체제를 선택하고 그래픽 API를 고른 뒤, 해당하는 플레이스홀더 패키지를 다운로드하세요.",
+      "osTitle": "운영 체제 선택",
+      "osDescription": "Coreverse Engine이 실행될 플랫폼부터 시작하세요.",
+      "graphicsTitle": "그래픽 API 선택",
+      "graphicsDescription": "선택한 운영 체제에 대해 Vulkan 또는 OpenGL을 선택하세요.",
+      "downloadTitle": "다운로드가 준비되었습니다",
+      "downloadDescription": "현재 다운로드는 텍스트 플레이스홀더입니다. 나중에 실제 패키지로 대체할 수 있습니다.",
+      "selectedOs": "운영 체제",
+      "selectedGraphics": "그래픽 API",
+      "downloadAction": "텍스트 파일 다운로드",
+      "back": "뒤로",
+      "steps": {
+        "os": {
+          "title": "운영 체제",
+          "description": "Windows, Linux 또는 macOS"
+        },
+        "graphics": {
+          "title": "그래픽 API",
+          "description": "Vulkan 또는 OpenGL"
+        },
+        "download": {
+          "title": "다운로드",
+          "description": "생성된 텍스트 파일"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "검색",
+      "discussionBadge": "커뮤니티",
+      "discussionTitle": "트렌드 토론 및 질문",
+      "eventsBadge": "최신",
+      "eventsTitle": "최근 이벤트"
+    },
+    "featuresPanel": {
+      "badge": "기능",
+      "title": "강력한 기능",
+      "description": "현대적이고 확장 가능하며 고성능인 엔진으로 게임을 더 빠르게 제작하세요.",
+
+      "videos": [
+        {
+          "title": "현대적인 에디터",
+          "description": "최고의 생산성을 위해 설계된 직관적인 에디터로 몰입감 있는 세계를 만들어 보세요."
+        },
+        {
+          "title": "고성능 렌더러",
+          "description": "Vulkan과 OpenGL로 구동되는 실시간 렌더링을 경험하세요."
+        },
+        {
+          "title": "유연한 스크립팅",
+          "description": "Rust, C++, Python 및 기타 지원되는 언어를 사용하여 게임플레이를 개발하세요."
+        },
+        {
+          "title": "고급 물리 엔진",
+          "description": "모듈식이며 사용자 정의가 가능한 물리 시스템으로 현실적인 시뮬레이션을 제작하세요."
+        },
+        {
+          "title": "크로스 플랫폼 배포",
+          "description": "Windows, Linux 및 기타 지원되는 플랫폼으로 프로젝트를 내보내세요."
+        }
+      ],
+
+      "previous": "이전",
+      "next": "다음"
+    },
+    "auth": {
+      "login": {
+        "title": "다시 오신 것을 환영합니다",
+        "subtitle": "계속하려면 로그인하세요",
+        "emailLabel": "이메일",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "비밀번호",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "로그인 상태 유지",
+        "forgotPassword": "비밀번호를 잊으셨나요?",
+        "submit": "로그인",
+        "submitting": "로그인 중...",
+        "noAccountDivider": "계정이 없으신가요?",
+        "noAccount": "아직 계정이 없으신가요?",
+        "registerLink": "회원가입",
+        "orContinueWith": "또는 다음으로 계속하기"
+      },
+      "register": {
+        "title": "계정 만들기",
+        "subtitle": "Coreverse Engine 커뮤니티에 참여하세요",
+        "usernameLabel": "사용자 이름",
+        "usernamePlaceholder": "username",
+        "emailLabel": "이메일",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "비밀번호",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "비밀번호 확인",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "<terms>서비스 이용약관</terms>에 동의합니다",
+        "submit": "계정 만들기",
+        "submitting": "계정 생성 중...",
+        "successMessage": "계정이 생성되었습니다! 계속하기 전에 이메일을 인증해 주세요.",
+        "haveAccount": "이미 계정이 있으신가요?",
+        "loginLink": "로그인",
+        "avatar": {
+          "hint": "PNG, JPG 또는 WEBP · 최대 8MB",
+          "changePhoto": "사진 변경",
+          "processing": "처리 중...",
+          "remove": "제거",
+          "invalidType": "이미지 파일을 선택해 주세요.",
+          "tooLarge": "파일이 너무 큽니다(최대 8MB).",
+          "processingFailed": "이미지를 처리할 수 없습니다. 다시 시도해 주세요."
+        }
+      },
+      "forgotPassword": {
+        "title": "비밀번호를 잊으셨나요?",
+        "subtitle": "이메일 주소를 입력하시면 비밀번호 재설정 링크를 보내드립니다",
+        "emailLabel": "이메일",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "재설정 링크 보내기",
+        "submitting": "전송 중...",
+        "successMessage": "비밀번호 재설정 링크가 이메일로 전송되었습니다.",
+        "backToLogin": "로그인으로 돌아가기"
+      },
+      "resetPassword": {
+        "title": "새 비밀번호 설정",
+        "subtitle": "계정을 위한 새 비밀번호를 만드세요",
+        "passwordLabel": "새 비밀번호",
+        "confirmPasswordLabel": "새 비밀번호 확인",
+        "submit": "비밀번호 업데이트",
+        "submitting": "업데이트 중..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Google로 계속하기",
+        "continueWithGithub": "GitHub로 계속하기"
+      },
+      "welcomeEmail": {
+        "subject": "Coreverse Engine에 오신 것을 환영합니다!",
+        "body": "안녕하세요 {username}님, Coreverse Engine 가족이 되어 주셔서 감사합니다."
+      },
+      "errors": {
+        "emailInvalid": "유효한 이메일 주소를 입력해 주세요.",
+        "passwordMin": "비밀번호는 최소 6자 이상이어야 합니다.",
+        "usernameMin": "사용자 이름은 최소 3자 이상이어야 합니다.",
+        "usernameMax": "사용자 이름은 최대 24자까지 가능합니다.",
+        "usernamePattern": "사용자 이름에는 문자, 숫자 및 밑줄(_)만 사용할 수 있습니다.",
+        "passwordMismatch": "비밀번호가 일치하지 않습니다.",
+        "acceptTermsRequired": "계속하려면 약관에 동의해야 합니다.",
+        "invalidCredentials": "이메일 또는 비밀번호가 올바르지 않습니다.",
+        "emailInUse": "이미 사용 중인 이메일입니다.",
+        "generic": "문제가 발생했습니다. 다시 시도해 주세요.",
+        "avatarInvalid": "프로필 사진이 유효하지 않거나 너무 큽니다."
+      }
+    }
+  },
+  "pl": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "Rdzeń i Wszechświat"
+    },
+    "navigation": {
+      "main": "Główna",
+      "install": "Instalacja",
+      "features": "Funkcje",
+      "community": "Społeczność",
+      "faq": "FAQ",
+      "login": "Zaloguj"
+    },
+    "userMenu": {
+      "openMenu": "Menu użytkownika",
+      "settings": "Ustawienia",
+      "logOut": "Wyloguj",
+      "loggingOut": "Wylogowywanie"
+    },
+    "theme": {
+      "light": "Przełącz na jasny motyw",
+      "dark": "Przełącz na ciemny motyw"
+    },
+    "language": {
+      "label": "Zmień język",
+      "english": "Angielski",
+      "turkish": "Turecki",
+      "french": "Francuski",
+      "german": "Niemiecki",
+      "spanish": "Hiszpański",
+      "portuguese": "Portugalski",
+      "russian": "Rosyjski",
+      "chinese": "Chiński",
+      "japanese": "Japoński",
+      "korean": "Koreański",
+      "polish": "Polski",
+      "indian": "Indyjski",
+      "arabic": "Arabski"
+    },
+    "home": {
+      "eyebrow": "Silnik gier nowej generacji",
+      "title": "Twórz immersyjne wszechświaty przy użyciu szybkiego, nowoczesnego silnika.",
+      "description": "Coreverse Engine dzięki systemom renderowania obsługującym Vulkan i OpenGL oferuje programistom możliwość tworzenia w językach C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift i TypeScript, a także zapewnia zaawansowane usprawnienia rdzenia oraz możliwość tworzenia światów z różnymi systemami fizyki.",
+      "primaryAction": "Rozpocznij tworzenie",
+      "secondaryAction": "Poznaj funkcje",
+      "previewLabel": "Podgląd środowiska wykonawczego",
+      "labName": "Laboratorium Coreverse",
+      "liveStatus": "Na żywo",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "Docelowa responsywność środowiska wykonawczego"
+        },
+        {
+          "value": "Modułowy",
+          "label": "Warstwy renderowania i rozgrywki"
+        },
+        {
+          "value": "Twórca na pierwszym miejscu",
+          "label": "Narzędzia zaprojektowane z myślą o iteracji"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Zainstaluj Coreverse",
+      "title": "Wybierz ścieżkę kompilacji.",
+      "description": "Wybierz swój system operacyjny, interfejs API grafiki i pobierz odpowiedni przykładowy pakiet.",
+      "osTitle": "Wybierz system operacyjny",
+      "osDescription": "Rozpocznij od platformy, na której będzie działać Coreverse Engine.",
+      "graphicsTitle": "Wybierz interfejs API grafiki",
+      "graphicsDescription": "Wybierz Vulkan lub OpenGL dla wybranego systemu operacyjnego.",
+      "downloadTitle": "Twoje pobieranie jest gotowe",
+      "downloadDescription": "Obecnie pobierany plik jest tekstowym symbolem zastępczym. Prawdziwe pakiety mogą zostać dodane później.",
+      "selectedOs": "System operacyjny",
+      "selectedGraphics": "Interfejs API grafiki",
+      "downloadAction": "Pobierz plik tekstowy",
+      "back": "Wstecz",
+      "steps": {
+        "os": {
+          "title": "System operacyjny",
+          "description": "Windows, Linux lub macOS"
+        },
+        "graphics": {
+          "title": "Interfejs API grafiki",
+          "description": "Vulkan lub OpenGL"
+        },
+        "download": {
+          "title": "Pobierz",
+          "description": "Wygenerowany plik tekstowy"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "Szukaj",
+      "discussionBadge": "Społeczność",
+      "discussionTitle": "Popularne dyskusje i pytania",
+      "eventsBadge": "Najnowsze",
+      "eventsTitle": "Ostatnie wydarzenia"
+    },
+    "featuresPanel": {
+      "badge": "Funkcje",
+      "title": "Potężne funkcje",
+      "description": "Twórz gry szybciej dzięki nowoczesnemu, rozszerzalnemu i wysokowydajnemu silnikowi.",
+
+      "videos": [
+        {
+          "title": "Nowoczesny edytor",
+          "description": "Twórz immersyjne światy za pomocą intuicyjnego edytora zaprojektowanego z myślą o maksymalnej produktywności."
+        },
+        {
+          "title": "Wysokowydajny renderer",
+          "description": "Korzystaj z renderowania w czasie rzeczywistym opartego na Vulkan i OpenGL."
+        },
+        {
+          "title": "Elastyczne skryptowanie",
+          "description": "Twórz mechanikę rozgrywki przy użyciu Rust, C++, Python i innych obsługiwanych języków."
+        },
+        {
+          "title": "Zaawansowana fizyka",
+          "description": "Twórz realistyczne symulacje dzięki modułowym i konfigurowalnym systemom fizyki."
+        },
+        {
+          "title": "Wdrażanie wieloplatformowe",
+          "description": "Eksportuj swoje projekty na Windows, Linux i inne obsługiwane platformy."
+        }
+      ],
+
+      "previous": "Poprzedni",
+      "next": "Następny"
+    },
+    "auth": {
+      "login": {
+        "title": "Witamy ponownie",
+        "subtitle": "Zaloguj się, aby kontynuować",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Hasło",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "Zapamiętaj mnie",
+        "forgotPassword": "Zapomniałeś hasła",
+        "submit": "Zaloguj się",
+        "submitting": "Logowanie...",
+        "noAccountDivider": "Nie masz konta?",
+        "noAccount": "Nie masz jeszcze konta?",
+        "registerLink": "Zarejestruj się",
+        "orContinueWith": "Lub kontynuuj za pomocą"
+      },
+      "register": {
+        "title": "Utwórz konto",
+        "subtitle": "Dołącz do społeczności Coreverse Engine",
+        "usernameLabel": "Nazwa użytkownika",
+        "usernamePlaceholder": "nazwa_użytkownika",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "Hasło",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Potwierdź hasło",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "Akceptuję <terms>Warunki korzystania z usługi</terms>",
+        "submit": "Utwórz konto",
+        "submitting": "Tworzenie konta...",
+        "successMessage": "Twoje konto zostało utworzone! Zweryfikuj swój adres e-mail przed kontynuowaniem.",
+        "haveAccount": "Masz już konto?",
+        "loginLink": "Zaloguj się",
+        "avatar": {
+          "hint": "PNG, JPG lub WEBP · maks. 8 MB",
+          "changePhoto": "Zmień zdjęcie",
+          "processing": "Przetwarzanie...",
+          "remove": "Usuń",
+          "invalidType": "Wybierz plik obrazu.",
+          "tooLarge": "Plik jest za duży (maks. 8 MB).",
+          "processingFailed": "Nie udało się przetworzyć obrazu. Spróbuj ponownie."
+        }
+      },
+      "forgotPassword": {
+        "title": "Zapomniałeś hasła?",
+        "subtitle": "Wprowadź swój adres e-mail, a wyślemy Ci link do zresetowania hasła",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "Wyślij link resetujący",
+        "submitting": "Wysyłanie...",
+        "successMessage": "Link do zresetowania hasła został wysłany na Twój adres e-mail.",
+        "backToLogin": "Powrót do logowania"
+      },
+      "resetPassword": {
+        "title": "Ustaw nowe hasło",
+        "subtitle": "Utwórz nowe hasło do swojego konta",
+        "passwordLabel": "Nowe hasło",
+        "confirmPasswordLabel": "Potwierdź nowe hasło",
+        "submit": "Zaktualizuj hasło",
+        "submitting": "Aktualizowanie..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Kontynuuj z Google",
+        "continueWithGithub": "Kontynuuj z GitHub"
+      },
+      "welcomeEmail": {
+        "subject": "Witamy w Coreverse Engine!",
+        "body": "Witaj {username}, dziękujemy za dołączenie do rodziny Coreverse Engine."
+      },
+      "errors": {
+        "emailInvalid": "Wprowadź prawidłowy adres e-mail.",
+        "passwordMin": "Hasło musi mieć co najmniej 6 znaków.",
+        "usernameMin": "Nazwa użytkownika musi mieć co najmniej 3 znaki.",
+        "usernameMax": "Nazwa użytkownika może mieć maksymalnie 24 znaki.",
+        "usernamePattern": "Nazwa użytkownika może zawierać tylko litery, cyfry i podkreślenia.",
+        "passwordMismatch": "Hasła nie są zgodne.",
+        "acceptTermsRequired": "Musisz zaakceptować warunki, aby kontynuować.",
+        "invalidCredentials": "Nieprawidłowy adres e-mail lub hasło.",
+        "emailInUse": "Ten adres e-mail jest już używany.",
+        "generic": "Coś poszło nie tak. Spróbuj ponownie.",
+        "avatarInvalid": "Zdjęcie profilowe jest nieprawidłowe lub ma zbyt duży rozmiar."
+      }
+    }
+  },
+  "in": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "कोर और ब्रह्मांड"
+    },
+    "navigation": {
+      "main": "मुख्य",
+      "install": "इंस्टॉल करें",
+      "features": "विशेषताएँ",
+      "community": "समुदाय",
+      "faq": "अक्सर पूछे जाने वाले प्रश्न",
+      "login": "लॉग इन करें"
+    },
+    "userMenu": {
+      "openMenu": "यूज़र मेनू",
+      "settings": "सेटिंग्स",
+      "logOut": "लॉग आउट",
+      "loggingOut": "लॉग आउट करना"
+    },
+    "theme": {
+      "light": "लाइट मोड पर स्विच करें",
+      "dark": "डार्क मोड पर स्विच करें"
+    },
+    "language": {
+      "label": "भाषा बदलें",
+      "english": "अंग्रेज़ी",
+      "turkish": "तुर्की",
+      "french": "फ़्रेंच",
+      "german": "जर्मन",
+      "spanish": "स्पेनिश",
+      "portuguese": "पुर्तगाली",
+      "russian": "रूसी",
+      "chinese": "चीनी",
+      "japanese": "जापानी",
+      "korean": "कोरियाई",
+      "polish": "पोलिश",
+      "indian": "हिंदी",
+      "arabic": "अरबी"
+    },
+    "home": {
+      "eyebrow": "अगली पीढ़ी का गेम इंजन",
+      "title": "तेज़, आधुनिक इंजन के साथ इमर्सिव ब्रह्मांड बनाएँ।",
+      "description": "Coreverse Engine अपने Vulkan और OpenGL समर्थित रेंडरर सिस्टम के साथ डेवलपर्स को C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift और TypeScript का उपयोग करके विकास करने की सुविधा देता है, साथ ही उन्नत कोर सुधार और विभिन्न भौतिकी प्रणालियों वाले संसार बनाने का अवसर भी प्रदान करता है।",
+      "primaryAction": "निर्माण शुरू करें",
+      "secondaryAction": "सुविधाओं का अन्वेषण करें",
+      "previewLabel": "रनटाइम पूर्वावलोकन",
+      "labName": "Coreverse प्रयोगशाला",
+      "liveStatus": "लाइव",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "प्रतिक्रियाशील रनटाइम लक्ष्य"
+        },
+        {
+          "value": "मॉड्यूलर",
+          "label": "रेंडरिंग और गेमप्ले परतें"
+        },
+        {
+          "value": "निर्माता-प्रथम",
+          "label": "पुनरावृत्ति के लिए डिज़ाइन किए गए उपकरण"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "Coreverse इंस्टॉल करें",
+      "title": "अपना बिल्ड पथ चुनें।",
+      "description": "अपना ऑपरेटिंग सिस्टम चुनें, एक ग्राफ़िक्स API चुनें, और उससे मेल खाने वाला प्लेसहोल्डर पैकेज डाउनलोड करें।",
+      "osTitle": "अपना ऑपरेटिंग सिस्टम चुनें",
+      "osDescription": "उस प्लेटफ़ॉर्म से शुरुआत करें जिस पर Coreverse Engine चलेगा।",
+      "graphicsTitle": "अपना ग्राफ़िक्स API चुनें",
+      "graphicsDescription": "चयनित ऑपरेटिंग सिस्टम के लिए Vulkan या OpenGL चुनें।",
+      "downloadTitle": "आपका डाउनलोड तैयार है",
+      "downloadDescription": "वर्तमान डाउनलोड एक टेक्स्ट प्लेसहोल्डर है। बाद में इसे वास्तविक पैकेजों से बदला जा सकता है।",
+      "selectedOs": "ऑपरेटिंग सिस्टम",
+      "selectedGraphics": "ग्राफ़िक्स API",
+      "downloadAction": "टेक्स्ट फ़ाइल डाउनलोड करें",
+      "back": "वापस",
+      "steps": {
+        "os": {
+          "title": "ऑपरेटिंग सिस्टम",
+          "description": "Windows, Linux, या macOS"
+        },
+        "graphics": {
+          "title": "ग्राफ़िक्स API",
+          "description": "Vulkan या OpenGL"
+        },
+        "download": {
+          "title": "डाउनलोड",
+          "description": "जनरेट की गई टेक्स्ट फ़ाइल"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "खोजें",
+      "discussionBadge": "समुदाय",
+      "discussionTitle": "प्रचलित चर्चाएँ और प्रश्न",
+      "eventsBadge": "नवीनतम",
+      "eventsTitle": "हाल की घटनाएँ"
+    },
+    "featuresPanel": {
+      "badge": "विशेषताएँ",
+      "title": "शक्तिशाली विशेषताएँ",
+      "description": "एक आधुनिक, विस्तारयोग्य और उच्च-प्रदर्शन इंजन के साथ तेज़ी से गेम बनाएँ।",
+
+      "videos": [
+        {
+          "title": "आधुनिक संपादक",
+          "description": "अधिकतम उत्पादकता के लिए डिज़ाइन किए गए सहज संपादक के साथ आकर्षक दुनियाएँ बनाएँ।"
+        },
+        {
+          "title": "उच्च-प्रदर्शन रेंडरर",
+          "description": "Vulkan और OpenGL द्वारा संचालित रीयल-टाइम रेंडरिंग का अनुभव करें।"
+        },
+        {
+          "title": "लचीली स्क्रिप्टिंग",
+          "description": "Rust, C++, Python और अन्य समर्थित भाषाओं का उपयोग करके गेमप्ले विकसित करें।"
+        },
+        {
+          "title": "उन्नत भौतिकी",
+          "description": "मॉड्यूलर और अनुकूलन योग्य भौतिकी प्रणालियों के साथ यथार्थवादी सिमुलेशन बनाएँ।"
+        },
+        {
+          "title": "क्रॉस-प्लेटफ़ॉर्म परिनियोजन",
+          "description": "अपने प्रोजेक्ट्स को Windows, Linux और अन्य समर्थित प्लेटफ़ॉर्म के लिए निर्यात करें।"
+        }
+      ],
+
+      "previous": "पिछला",
+      "next": "अगला"
+    },
+    "auth": {
+      "login": {
+        "title": "वापसी पर आपका स्वागत है",
+        "subtitle": "जारी रखने के लिए साइन इन करें",
+        "emailLabel": "ईमेल",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "पासवर्ड",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "मुझे याद रखें",
+        "forgotPassword": "पासवर्ड भूल गए",
+        "submit": "साइन इन करें",
+        "submitting": "साइन इन किया जा रहा है...",
+        "noAccountDivider": "क्या आपका खाता नहीं है?",
+        "noAccount": "क्या अभी तक आपका खाता नहीं है?",
+        "registerLink": "साइन अप करें",
+        "orContinueWith": "या इसके साथ जारी रखें"
+      },
+      "register": {
+        "title": "एक खाता बनाएँ",
+        "subtitle": "Coreverse Engine समुदाय से जुड़ें",
+        "usernameLabel": "उपयोगकर्ता नाम",
+        "usernamePlaceholder": "username",
+        "emailLabel": "ईमेल",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "पासवर्ड",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "पासवर्ड की पुष्टि करें",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "मैं <terms>सेवा की शर्तों</terms> को स्वीकार करता/करती हूँ",
+        "submit": "खाता बनाएँ",
+        "submitting": "खाता बनाया जा रहा है...",
+        "successMessage": "आपका खाता बन गया है! कृपया आगे बढ़ने से पहले अपना ईमेल सत्यापित करें।",
+        "haveAccount": "क्या आपका पहले से खाता है?",
+        "loginLink": "साइन इन करें",
+        "avatar": {
+          "hint": "PNG, JPG या WEBP · अधिकतम 8MB",
+          "changePhoto": "फ़ोटो बदलें",
+          "processing": "प्रोसेस किया जा रहा है...",
+          "remove": "हटाएँ",
+          "invalidType": "कृपया एक छवि फ़ाइल चुनें।",
+          "tooLarge": "फ़ाइल बहुत बड़ी है (अधिकतम 8MB)।",
+          "processingFailed": "छवि को प्रोसेस नहीं किया जा सका। कृपया पुनः प्रयास करें।"
+        }
+      },
+      "forgotPassword": {
+        "title": "क्या आप अपना पासवर्ड भूल गए?",
+        "subtitle": "अपना ईमेल पता दर्ज करें और हम आपको पासवर्ड रीसेट करने का लिंक भेजेंगे",
+        "emailLabel": "ईमेल",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "रीसेट लिंक भेजें",
+        "submitting": "भेजा जा रहा है...",
+        "successMessage": "पासवर्ड रीसेट लिंक आपके ईमेल पर भेज दिया गया है।",
+        "backToLogin": "साइन इन पर वापस जाएँ"
+      },
+      "resetPassword": {
+        "title": "नया पासवर्ड सेट करें",
+        "subtitle": "अपने खाते के लिए नया पासवर्ड बनाएँ",
+        "passwordLabel": "नया पासवर्ड",
+        "confirmPasswordLabel": "नए पासवर्ड की पुष्टि करें",
+        "submit": "पासवर्ड अपडेट करें",
+        "submitting": "अपडेट किया जा रहा है..."
+      },
+      "oauth": {
+        "continueWithGoogle": "Google के साथ जारी रखें",
+        "continueWithGithub": "GitHub के साथ जारी रखें"
+      },
+      "welcomeEmail": {
+        "subject": "Coreverse Engine में आपका स्वागत है!",
+        "body": "नमस्ते {username}, Coreverse Engine परिवार में शामिल होने के लिए धन्यवाद।"
+      },
+      "errors": {
+        "emailInvalid": "कृपया एक मान्य ईमेल पता दर्ज करें।",
+        "passwordMin": "पासवर्ड कम से कम 6 अक्षरों का होना चाहिए।",
+        "usernameMin": "उपयोगकर्ता नाम कम से कम 3 अक्षरों का होना चाहिए।",
+        "usernameMax": "उपयोगकर्ता नाम अधिकतम 24 अक्षरों का हो सकता है।",
+        "usernamePattern": "उपयोगकर्ता नाम में केवल अक्षर, अंक और अंडरस्कोर हो सकते हैं।",
+        "passwordMismatch": "पासवर्ड मेल नहीं खाते।",
+        "acceptTermsRequired": "जारी रखने के लिए आपको शर्तें स्वीकार करनी होंगी।",
+        "invalidCredentials": "ईमेल या पासवर्ड गलत है।",
+        "emailInUse": "यह ईमेल पहले से उपयोग में है।",
+        "generic": "कुछ गलत हो गया। कृपया पुनः प्रयास करें।",
+        "avatarInvalid": "प्रोफ़ाइल चित्र अमान्य है या बहुत बड़ा है।"
+      }
+    }
+  },
+  "sa": {
+    "brand": {
+      "name": "Coreverse Engine",
+      "tagline": "\u200Fالنواة والكون"
+    },
+    "navigation": {
+      "main": "\u200Fالرئيسية",
+      "install": "\u200Fالتثبيت",
+      "features": "\u200Fسمات",
+      "community": "\u200Fالمجتمع",
+      "faq": "\u200Fالأسئلة الشائعة",
+      "login": "\u200Fتسجيل الدخول"
+    },
+    "userMenu": {
+      "openMenu": "\u200Fقائمة المستخدم",
+      "settings": "\u200Fالإعدادات",
+      "logOut": "\u200Fتسجيل الخروج",
+      "loggingOut": "\u200Fجاري تسجيل الخروج"
+    },
+    "theme": {
+      "light": "\u200Fالتبديل إلى الوضع الفاتح",
+      "dark": "\u200Fالتبديل إلى الوضع الداكن"
+    },
+    "language": {
+      "label": "\u200Fتغيير اللغة",
+      "english": "\u200Fالإنجليزية",
+      "turkish": "\u200Fالتركية",
+      "french": "\u200Fالفرنسية",
+      "german": "\u200Fالألمانية",
+      "spanish": "\u200Fالإسبانية",
+      "portuguese": "\u200Fالبرتغالية",
+      "russian": "\u200Fالروسية",
+      "chinese": "\u200Fالصينية",
+      "japanese": "\u200Fاليابانية",
+      "korean": "\u200Fالكورية",
+      "polish": "\u200Fالبولندية",
+      "indian": "\u200Fالهندية",
+      "arabic": "\u200Fالعربية"
+    },
+    "home": {
+      "eyebrow": "\u200Fمحرك ألعاب من الجيل التالي",
+      "title": "\u200Fابنِ أكوانًا غامرة باستخدام محرك سريع وحديث",
+      "description": "\u200Fيقدم \u2066Coreverse Engine\u2069، بفضل أنظمة العرض التي تدعم \u2066Vulkan\u2069 و\u2066OpenGL\u2069، للمطورين إمكانية التطوير باستخدام \u2066C\u2069 و\u2066C++\u2069 و\u2066C#\u2069 و\u2066Dart\u2069 و\u2066Java\u2069 و\u2066JavaScript\u2069 و\u2066Kotlin\u2069 و\u2066Swift\u2069 و\u2066TypeScript\u2069، كما يوفر تحسينات متقدمة على النواة وإمكانية إنشاء عوالم بأنظمة فيزياء مختلفة",
+      "primaryAction": "\u200Fابدأ البناء",
+      "secondaryAction": "\u200Fاستكشف الميزات",
+      "previewLabel": "\u200Fمعاينة وقت التشغيل",
+      "labName": "\u200F\u2066Coreverse\u2069مختبر",
+      "liveStatus": "\u200Fمباشر",
+      "stats": [
+        {
+          "value": "120Hz",
+          "label": "\u200Fهدف وقت تشغيل سريع الاستجابة"
+        },
+        {
+          "value": "\u200Fمعياري",
+          "label": "\u200Fطبقات العرض وطريقة اللعب"
+        },
+        {
+          "value": "\u200Fالمبدع أولًا",
+          "label": "\u200Fأدوات مصممة للتكرار والتحسين"
+        }
+      ]
+    },
+    "installPanel": {
+      "eyebrow": "\u200F\u2066Coreverse\u2069تثبيت",
+      "title": "\u200Fاختر مسار الإصدار الخاص بك",
+      "description": "\u200Fحدد نظام التشغيل، واختر واجهة برمجة الرسومات، ثم نزّل الحزمة التجريبية المطابقة",
+      "osTitle": "\u200Fحدد نظام التشغيل",
+      "osDescription": "\u200F\u2066Coreverse Engine\u2069ابدأ بالمنصة التي سيعمل عليها",
+      "graphicsTitle": "\u200Fحدد واجهة برمجة الرسومات",
+      "graphicsDescription": "\u200Fاختر \u2066Vulkan\u2069 أو \u2066OpenGL\u2069 لنظام التشغيل المحدد",
+      "downloadTitle": "\u200Fالتنزيل جاهز",
+      "downloadDescription": "\u200Fالتنزيل الحالي عبارة عن ملف نصي تجريبي. يمكن استبداله بالحزم الفعلية لاحقًا",
+      "selectedOs": "\u200Fنظام التشغيل",
+      "selectedGraphics": "\u200Fواجهة برمجة الرسومات",
+      "downloadAction": "\u200Fتنزيل الملف النصي",
+      "back": "\u200Fرجوع",
+      "steps": {
+        "os": {
+          "title": "\u200Fنظام التشغيل",
+          "description": "\u200F\u2066Windows\u2069 أو \u2066Linux\u2069 أو \u2066macOS\u2069"
+        },
+        "graphics": {
+          "title": "\u200Fواجهة برمجة الرسومات",
+          "description": "\u200F\u2066Vulkan\u2069 أو \u2066OpenGL\u2069"
+        },
+        "download": {
+          "title": "\u200Fالتنزيل",
+          "description": "\u200Fملف نصي مُنشأ"
+        }
+      },
+      "options": {
+        "windows": "Windows",
+        "linux": "Linux",
+        "macos": "macOS",
+        "vulkan": "Vulkan",
+        "opengl": "OpenGL"
+      }
+    },
+    "communityPanel": {
+      "search": "\u200Fبحث",
+      "discussionBadge": "\u200Fالمجتمع",
+      "discussionTitle": "\u200Fالنقاشات والأسئلة الرائجة",
+      "eventsBadge": "\u200Fالأحدث",
+      "eventsTitle": "\u200Fالأحداث الأخيرة"
+    },
+    "featuresPanel": {
+      "badge": "\u200Fالميزات",
+      "title": "\u200Fميزات قوية",
+      "description": "\u200Fأنشئ الألعاب بشكل أسرع باستخدام محرك حديث، قابل للتوسعة، وعالي الأداء",
+
+      "videos": [
+        {
+          "title": "\u200Fمحرر حديث",
+          "description": "\u200Fأنشئ عوالم غامرة باستخدام محرر بديهي مصمم لتحقيق أقصى إنتاجية"
+        },
+        {
+          "title": "\u200Fعارض عالي الأداء",
+          "description": "\u200Fاستمتع بالتصيير الفوري المدعوم بتقنيتي \u2066Vulkan\u2069 و\u2066OpenGL\u2069"
+        },
+        {
+          "title": "\u200Fبرمجة نصية مرنة",
+          "description": "\u200Fطوّر أسلوب اللعب باستخدام \u2066Rust\u2069 و\u2066C++\u2069 و\u2069Python\u2069 وغيرها من اللغات المدعومة"
+        },
+        {
+          "title": "\u200Fفيزياء متقدمة",
+          "description": "\u200Fأنشئ محاكاة واقعية باستخدام أنظمة فيزياء معيارية وقابلة للتخصيص"
+        },
+        {
+          "title": "\u200Fالنشر عبر المنصات",
+          "description": "\u200Fصدّر مشاريعك إلى \u2066Windows\u2069 و\u2066Linux\u2069 وغيرها من المنصات المدعومة"
+        }
+      ],
+
+      "previous": "\u200Fالسابق",
+      "next": "\u200Fالتالي"
+    },
+    "auth": {
+      "login": {
+        "title": "\u200Fمرحبًا بعودتك",
+        "subtitle": "\u200Fسجّل الدخول للمتابعة",
+        "emailLabel": "\u200Fالبريد الإلكتروني",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "\u200Fكلمة المرور",
+        "passwordPlaceholder": "••••••••",
+        "rememberMe": "\u200Fتذكرني",
+        "forgotPassword": "\u200Fنسيت كلمة المرور",
+        "submit": "\u200Fتسجيل الدخول",
+        "submitting": "\u200Fجارٍ تسجيل الدخول",
+        "noAccountDivider": "\u200Fليس لديك حساب؟",
+        "noAccount": "\u200Fليس لديك حساب بعد؟",
+        "registerLink": "\u200Fإنشاء حساب",
+        "orContinueWith": "\u200Fأو تابع باستخدام"
+      },
+      "register": {
+        "title": "\u200Fإنشاء حساب",
+        "subtitle": "\u200F\u2066Coreverse Engine\u2069انضم إلى مجتمع",
+        "usernameLabel": "\u200Fاسم المستخدم",
+        "usernamePlaceholder": "username",
+        "emailLabel": "\u200Fالبريد الإلكتروني",
+        "emailPlaceholder": "example@coreverse.dev",
+        "passwordLabel": "\u200Fكلمة المرور",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "\u200Fتأكيد كلمة المرور",
+        "confirmPasswordPlaceholder": "••••••••",
+        "acceptTerms": "\u200F \u2066<terms>\u2069شروط الخدمة\u2066</terms>\u2069أوافق على",
+        "submit": "\u200Fإنشاء الحساب",
+        "submitting": "\u200Fجارٍ إنشاء الحساب",
+        "successMessage": "\u200Fتم إنشاء حسابك! يُرجى التحقق من بريدك الإلكتروني قبل المتابعة",
+        "haveAccount": "\u200Fهل لديك حساب بالفعل؟",
+        "loginLink": "\u200Fتسجيل الدخول",
+        "avatar": {
+          "hint": "\u200F\u2066PNG\u2069 أو \u2066JPG\u2069 أو \u2066WEBP\u2069 \u2066·\u2069 ميجابايت\u2066 8\u2069الحد الأقصى ",
+          "changePhoto": "\u200Fتغيير الصورة",
+          "processing": "\u200Fجارٍ المعالجة",
+          "remove": "\u200Fإزالة",
+          "invalidType": "\u200Fيرجى اختيار ملف صورة",
+          "tooLarge": "\u200F\u2066.(\u2069ميجابايت\u20668\u2069الحد الأقصى\u2066)\u2069الملف كبير جدًا",
+          "processingFailed": "\u200F\u2066.\u2069يُرجى المحاولة مرة أخرى \u2066.\u2069تعذّرت معالجة الصورة"
+        }
+      },
+      "forgotPassword": {
+        "title": "\u200Fهل نسيت كلمة المرور؟",
+        "subtitle": "\u200Fأدخل عنوان بريدك الإلكتروني وسنرسل إليك رابطًا لإعادة تعيين كلمة المرور",
+        "emailLabel": "\u200Fالبريد الإلكتروني",
+        "emailPlaceholder": "example@coreverse.dev",
+        "submit": "\u200Fإرسال رابط إعادة التعيين",
+        "submitting": "\u200Fجارٍ الإرسال",
+        "successMessage": "\u200Fتم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني",
+        "backToLogin": "\u200Fالعودة إلى تسجيل الدخول"
+      },
+      "resetPassword": {
+        "title": "\u200Fتعيين كلمة مرور جديدة",
+        "subtitle": "\u200Fأنشئ كلمة مرور جديدة لحسابك",
+        "passwordLabel": "\u200Fكلمة المرور الجديدة",
+        "confirmPasswordLabel": "\u200Fتأكيد كلمة المرور الجديدة",
+        "submit": "\u200Fتحديث كلمة المرور",
+        "submitting": "\u200Fجارٍ التحديث"
+      },
+      "oauth": {
+        "continueWithGoogle": "\u200F\u2066Google\u2069المتابعة باستخدام",
+        "continueWithGithub": "\u200F\u2066GitHub\u2069المتابعة باستخدام"
+      },
+      "welcomeEmail": {
+        "subject": "\u200F\u2066!Coreverse Engine\u2069مرحبًا بك في",
+        "body": "\u200F\u2066Coreverse Engine\u2069،مرحبًا لانضمامك إلى عائلة\u2066{username}\u2069 شكرًا "
+      },
+      "errors": {
+        "emailInvalid": "\u200Fيرجى إدخال عنوان بريد إلكتروني صالح",
+        "passwordMin": "\u200Fيجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+        "usernameMin": "\u200Fيجب أن يتكون اسم المستخدم من 3 أحرف على الأقل",
+        "usernameMax": "\u200Fيمكن أن يصل اسم المستخدم إلى 24 حرفًا كحد أقصى",
+        "usernamePattern": "\u200Fيمكن أن يصل اسم المستخدم إلى 24 حرفًا كحد أقصى",
+        "passwordMismatch": "\u200Fكلمتا المرور غير متطابقتين",
+        "acceptTermsRequired": "\u200Fيجب عليك الموافقة على الشروط للمتابعة",
+        "invalidCredentials": "\u200Fالبريد الإلكتروني أو كلمة المرور غير صحيحة",
+        "emailInUse": "\u200Fهذا البريد الإلكتروني مستخدم بالفعل",
+        "generic": "\u200F\u2066.\u2069يُرجى المحاولة مرة أخرى\u2066.\u2069حدث خطأ ما",
+        "avatarInvalid": "\u200F\u2066.\u2069صورة الملف الشخصي غير صالحة أو كبيرة جدًا"
+      }
     }
   }
 }

@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { InstallPanel } from "@/features/install/install-panel";
 import { Button } from "@/components/ui/Button/button";
 import {CommunityPanel} from "@/features/community/community-panel";
-import {FeaturesPanel} from "@/features/features/features-panel";
+import {FeaturesPanel} from "@/features/engine-features/features-panel";
 
 type HomeStat = {
   value: string;

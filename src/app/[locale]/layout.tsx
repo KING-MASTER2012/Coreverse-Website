@@ -1,34 +1,26 @@
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { InteractiveBackground } from "@/components/effects/interactive-background";
-import { TopBar } from "@/components/layout/top-bar";
 import { isLocale, locales } from "@/i18n/routing";
 
-type LocaleLayoutProps = Readonly<{
+type LocaleLayoutProps = {
   children: React.ReactNode;
-  params: Promise<{
-    locale: string;
-  }>;
-}>;
-
-export const generateStaticParams = () => {
-  return locales.map((locale) => ({ locale }));
+  params: Promise<{ locale: string }>;
 };
 
-const LocaleLayout = async ({ children, params }: LocaleLayoutProps) => {
+export const generateStaticParams = () =>
+  locales.map((locale) => ({ locale }));
+
+export default async function LocaleLayout({
+                                             children,
+                                             params,
+                                           }: LocaleLayoutProps) {
   const { locale } = await params;
 
-  if (!isLocale(locale)) {
-    notFound();
-  }
+  if (!isLocale(locale)) notFound();
 
   return (
     <NextIntlClientProvider>
-      <InteractiveBackground />
-      <TopBar />
       {children}
     </NextIntlClientProvider>
   );
-};
-
-export default LocaleLayout;
+}
