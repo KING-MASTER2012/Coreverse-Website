@@ -13,7 +13,7 @@
       "login": "Login"
     },
     "userMenu": {
-      "openMenu": "User Menu",
+      "userMenu": "User Menu",
       "settings": "Settings",
       "logOut": "Log Out",
       "loggingOut": "Logging Out"
@@ -41,7 +41,7 @@
     "home": {
       "eyebrow": "Next generation game engine",
       "title": "Build immersive universes with a fast, modern engine.",
-      "description": "Coreverse Engine, with its Vulkan and OpenGL-supported renderer systems, offers developers the ability to develop using C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift, and TypeScript, while also providing advanced core enhancements and the opportunity to create worlds with different physics systems.",
+      "description": "Coreverse Engine, with its Vulkan and OpenGL-supported renderer systems, offers developers the ability to develop using C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift, and TypeScript, while also providing advanced core enhancements and the opportunity to create worlds with different physics systems.",
       "primaryAction": "Start building",
       "secondaryAction": "Explore features",
       "previewLabel": "Runtime preview",
@@ -235,7 +235,7 @@
       "login": "Oturum Aç"
     },
     "userMenu": {
-      "openMenu": "Kullanıcı menüsü",
+      "userMenu": "Kullanıcı menüsü",
       "settings": "Ayarlar",
       "logOut": "Çıkış yap",
       "loggingOut": "Çıkış yapılıyor..."
@@ -263,7 +263,7 @@
     "home": {
       "eyebrow": "Yeni nesil oyun motoru",
       "title": "Hızlı ve modern bir motorla sürükleyici evrenler inşa et.",
-      "description": "Coreverse Engine, Vulkan ve OpenGL destekli render sistemleriyle, geliştiricilere C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift ve TypeScript kullanarak geliştirme imkanı sunarken, gelişmiş çekirdek geliştirmeleri ve farklı fizik sistemleriyle dünyalar yaratma fırsatı da sunuyor.",
+      "description": "Coreverse Engine, Vulkan ve OpenGL destekli render sistemleriyle, geliştiricilere C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift ve TypeScript kullanarak geliştirme imkanı sunarken, gelişmiş çekirdek geliştirmeleri ve farklı fizik sistemleriyle dünyalar yaratma fırsatı da sunuyor.",
       "primaryAction": "İnşaa etmeye başla",
       "secondaryAction": "Özellikleri keşfedin",
       "previewLabel": "Çalışma zamanı önizlemesi",
@@ -386,7 +386,7 @@
         "passwordPlaceholder": "••••••••",
         "confirmPasswordLabel": "Şifre (tekrar)",
         "confirmPasswordPlaceholder": "••••••••",
-        "acceptTerms": "<terms>Kullanım Şartları</terms>'nı kabul ediyorum",
+        "acceptTerms": "<terms>Kullanım Şartları</terms>nı kabul ediyorum",
         "submit": "Hesap oluştur",
         "submitting": "Hesap oluşturuluyor...",
         "successMessage": "Hesabın oluşturuldu! Devam etmeden önce lütfen e-postanı doğrula.",
@@ -457,7 +457,7 @@
       "login": "Connexion"
     },
     "userMenu": {
-      "openMenu": "Menu utilisateur",
+      "userMenu": "Menu utilisateur",
       "settings": "Paramètres",
       "logOut": "Se déconnecter",
       "loggingOut": "Déconnexion en cours"
@@ -485,7 +485,7 @@
     "home": {
       "eyebrow": "Moteur de jeu de nouvelle génération",
       "title": "Créez des univers immersifs grâce à un moteur rapide et moderne.",
-      "description": "Coreverse Engine, avec ses systèmes de rendu compatibles Vulkan et OpenGL, offre aux développeurs la possibilité de développer en utilisant C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift et TypeScript, tout en fournissant des améliorations de base avancées et la possibilité de créer des mondes avec différents systèmes physiques.",
+      "description": "Coreverse Engine, avec ses systèmes de rendu compatibles Vulkan et OpenGL, offre aux développeurs la possibilité de développer en utilisant C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift et TypeScript, tout en fournissant des améliorations de base avancées et la possibilité de créer des mondes avec différents systèmes physiques.",
       "primaryAction": "Commencez à construire",
       "secondaryAction": "Explorez les fonctionnalités",
       "previewLabel": "Aperçu de l'exécution",
@@ -679,7 +679,7 @@
       "login": "Login"
     },
     "userMenu": {
-      "openMenu": "Benutzermenü",
+      "userMenu": "Benutzermenü",
       "settings": "Einstellungen",
       "logOut": "Abmelden",
       "loggingOut": "Abmelden"
@@ -901,7 +901,7 @@
       "login": "Acceso"
     },
     "userMenu": {
-      "openMenu": "Menú de usuario",
+      "userMenu": "Menú de usuario",
       "settings": "Configuración",
       "logOut": "Cerrar sesión",
       "loggingOut": "Cerrar sesión"
@@ -929,7 +929,7 @@
     "home": {
       "eyebrow": "Motor de juegos de próxima generación",
       "title": "Crea universos inmersivos con un motor rápido y moderno.",
-      "description": "Coreverse Engine, con sus sistemas de renderizado compatibles con Vulkan y OpenGL, ofrece a los desarrolladores la posibilidad de desarrollar utilizando C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift y TypeScript, además de proporcionar mejoras avanzadas del núcleo y la oportunidad de crear mundos con diferentes sistemas de física.",
+      "description": "Coreverse Engine, con sus sistemas de renderizado compatibles con Vulkan y OpenGL, ofrece a los desarrolladores la posibilidad de desarrollar utilizando C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift y TypeScript, además de proporcionar mejoras avanzadas del núcleo y la oportunidad de crear mundos con diferentes sistemas de física.",
       "primaryAction": "Comenzar a crear",
       "secondaryAction": "Explorar funciones",
       "previewLabel": "Vista previa del entorno de ejecución",
@@ -1123,7 +1123,7 @@
       "login": "Conecte-se"
     },
     "userMenu": {
-      "openMenu": "Menu do Utilizador",
+      "userMenu": "Menu do Utilizador",
       "settings": "Definições",
       "logOut": "Sair",
       "loggingOut": "Efetuando Logout"
@@ -1151,7 +1151,7 @@
     "home": {
       "eyebrow": "Motor de jogos da próxima geração",
       "title": "Crie universos imersivos com um motor rápido e moderno.",
-      "description": "O Coreverse Engine, com os seus sistemas de renderização compatíveis com Vulkan e OpenGL, oferece aos programadores a possibilidade de desenvolver em C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift e TypeScript, proporcionando também melhorias avançadas no núcleo e a oportunidade de criar mundos com diferentes sistemas de física.",
+      "description": "O Coreverse Engine, com os seus sistemas de renderização compatíveis com Vulkan e OpenGL, oferece aos programadores a possibilidade de desenvolver em C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift e TypeScript, proporcionando também melhorias avançadas no núcleo e a oportunidade de criar mundos com diferentes sistemas de física.",
       "primaryAction": "Começar a criar",
       "secondaryAction": "Explorar funcionalidades",
       "previewLabel": "Pré-visualização em tempo de execução",
@@ -1345,7 +1345,7 @@
       "login": "登录"
     },
     "userMenu": {
-      "openMenu": "用户菜单",
+      "userMenu": "用户菜单",
       "settings": "设置",
       "logOut": "注销",
       "loggingOut": "正在注销"
@@ -1373,7 +1373,7 @@
     "home": {
       "eyebrow": "新一代游戏引擎",
       "title": "使用快速、现代化的引擎构建沉浸式宇宙。",
-      "description": "Coreverse Engine 凭借支持 Vulkan 和 OpenGL 的渲染系统，为开发者提供使用 C、C++、C#、Dart、Java、JavaScript、Kotlin、Swift 和 TypeScript 进行开发的能力，同时还提供先进的核心增强功能以及创建采用不同物理系统世界的机会。",
+      "description": "Coreverse Engine 凭借支持 Vulkan 和 OpenGL 的渲染系统，为开发者提供使用 C、C++、C#、Dart、Java、JavaScript、Kotlin、Rust、Swift 和 TypeScript 进行开发的能力，同时还提供先进的核心增强功能以及创建采用不同物理系统世界的机会。",
       "primaryAction": "开始构建",
       "secondaryAction": "探索功能",
       "previewLabel": "运行时预览",
@@ -1567,7 +1567,7 @@
       "login": "Вход"
     },
     "userMenu": {
-      "openMenu": "Пользовательское меню",
+      "userMenu": "Пользовательское меню",
       "settings": "Настройки",
       "logOut": "Выход",
       "loggingOut": "Выход из системы"
@@ -1595,7 +1595,7 @@
     "home": {
       "eyebrow": "Игровой движок нового поколения",
       "title": "Создавайте захватывающие вселенные с помощью быстрого современного движка.",
-      "description": "Coreverse Engine с системами рендеринга, поддерживающими Vulkan и OpenGL, предоставляет разработчикам возможность создавать проекты на C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift и TypeScript, а также предлагает расширенные возможности ядра и создание миров с различными физическими системами.",
+      "description": "Coreverse Engine с системами рендеринга, поддерживающими Vulkan и OpenGL, предоставляет разработчикам возможность создавать проекты на C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift и TypeScript, а также предлагает расширенные возможности ядра и создание миров с различными физическими системами.",
       "primaryAction": "Начать разработку",
       "secondaryAction": "Изучить возможности",
       "previewLabel": "Предварительный просмотр во время выполнения",
@@ -1789,7 +1789,7 @@
       "login": "ログイン"
     },
     "userMenu": {
-      "openMenu": "ユーザーメニュー",
+      "userMenu": "ユーザーメニュー",
       "settings": "設定",
       "logOut": "ログアウト",
       "loggingOut": "ログアウト"
@@ -1817,7 +1817,7 @@
     "home": {
       "eyebrow": "次世代ゲームエンジン",
       "title": "高速でモダンなエンジンで、没入感あふれるユニバースを構築しましょう。",
-      "description": "Coreverse Engine は、Vulkan および OpenGL に対応したレンダラーシステムを備え、開発者が C、C++、C#、Dart、Java、JavaScript、Kotlin、Swift、TypeScript を使用して開発できるようにするとともに、高度なコア機能の強化や、異なる物理システムを備えた世界を作成する機会を提供します。",
+      "description": "Coreverse Engine は、Vulkan および OpenGL に対応したレンダラーシステムを備え、開発者が C、C++、C#、Dart、Java、JavaScript、Kotlin、Rust、Swift、TypeScript を使用して開発できるようにするとともに、高度なコア機能の強化や、異なる物理システムを備えた世界を作成する機会を提供します。",
       "primaryAction": "開発を始める",
       "secondaryAction": "機能を見る",
       "previewLabel": "ランタイムプレビュー",
@@ -2011,7 +2011,7 @@
       "login": "로그인"
     },
     "userMenu": {
-      "openMenu": "사용자 메뉴",
+      "userMenu": "사용자 메뉴",
       "settings": "설정",
       "logOut": "로그아웃",
       "loggingOut": "로그아웃 중"
@@ -2039,7 +2039,7 @@
     "home": {
       "eyebrow": "차세대 게임 엔진",
       "title": "빠르고 현대적인 엔진으로 몰입감 넘치는 세계를 구축하세요.",
-      "description": "Coreverse Engine은 Vulkan 및 OpenGL을 지원하는 렌더러 시스템을 통해 개발자가 C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift, TypeScript를 사용하여 개발할 수 있도록 지원하며, 향상된 코어 기능과 다양한 물리 시스템을 활용한 세계를 제작할 수 있는 기회를 제공합니다.",
+      "description": "Coreverse Engine은 Vulkan 및 OpenGL을 지원하는 렌더러 시스템을 통해 개발자가 C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift, TypeScript를 사용하여 개발할 수 있도록 지원하며, 향상된 코어 기능과 다양한 물리 시스템을 활용한 세계를 제작할 수 있는 기회를 제공합니다.",
       "primaryAction": "개발 시작",
       "secondaryAction": "기능 살펴보기",
       "previewLabel": "런타임 미리보기",
@@ -2233,7 +2233,7 @@
       "login": "Zaloguj"
     },
     "userMenu": {
-      "openMenu": "Menu użytkownika",
+      "userMenu": "Menu użytkownika",
       "settings": "Ustawienia",
       "logOut": "Wyloguj",
       "loggingOut": "Wylogowywanie"
@@ -2261,7 +2261,7 @@
     "home": {
       "eyebrow": "Silnik gier nowej generacji",
       "title": "Twórz immersyjne wszechświaty przy użyciu szybkiego, nowoczesnego silnika.",
-      "description": "Coreverse Engine dzięki systemom renderowania obsługującym Vulkan i OpenGL oferuje programistom możliwość tworzenia w językach C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift i TypeScript, a także zapewnia zaawansowane usprawnienia rdzenia oraz możliwość tworzenia światów z różnymi systemami fizyki.",
+      "description": "Coreverse Engine dzięki systemom renderowania obsługującym Vulkan i OpenGL oferuje programistom możliwość tworzenia w językach C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift i TypeScript, a także zapewnia zaawansowane usprawnienia rdzenia oraz możliwość tworzenia światów z różnymi systemami fizyki.",
       "primaryAction": "Rozpocznij tworzenie",
       "secondaryAction": "Poznaj funkcje",
       "previewLabel": "Podgląd środowiska wykonawczego",
@@ -2455,7 +2455,7 @@
       "login": "लॉग इन करें"
     },
     "userMenu": {
-      "openMenu": "यूज़र मेनू",
+      "userMenu": "यूज़र मेनू",
       "settings": "सेटिंग्स",
       "logOut": "लॉग आउट",
       "loggingOut": "लॉग आउट करना"
@@ -2483,7 +2483,7 @@
     "home": {
       "eyebrow": "अगली पीढ़ी का गेम इंजन",
       "title": "तेज़, आधुनिक इंजन के साथ इमर्सिव ब्रह्मांड बनाएँ।",
-      "description": "Coreverse Engine अपने Vulkan और OpenGL समर्थित रेंडरर सिस्टम के साथ डेवलपर्स को C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift और TypeScript का उपयोग करके विकास करने की सुविधा देता है, साथ ही उन्नत कोर सुधार और विभिन्न भौतिकी प्रणालियों वाले संसार बनाने का अवसर भी प्रदान करता है।",
+      "description": "Coreverse Engine अपने Vulkan और OpenGL समर्थित रेंडरर सिस्टम के साथ डेवलपर्स को C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift और TypeScript का उपयोग करके विकास करने की सुविधा देता है, साथ ही उन्नत कोर सुधार और विभिन्न भौतिकी प्रणालियों वाले संसार बनाने का अवसर भी प्रदान करता है।",
       "primaryAction": "निर्माण शुरू करें",
       "secondaryAction": "सुविधाओं का अन्वेषण करें",
       "previewLabel": "रनटाइम पूर्वावलोकन",
@@ -2677,7 +2677,7 @@
       "login": "\u200Fتسجيل الدخول"
     },
     "userMenu": {
-      "openMenu": "\u200Fقائمة المستخدم",
+      "userMenu": "\u200Fقائمة المستخدم",
       "settings": "\u200Fالإعدادات",
       "logOut": "\u200Fتسجيل الخروج",
       "loggingOut": "\u200Fجاري تسجيل الخروج"
@@ -2705,7 +2705,7 @@
     "home": {
       "eyebrow": "\u200Fمحرك ألعاب من الجيل التالي",
       "title": "\u200Fابنِ أكوانًا غامرة باستخدام محرك سريع وحديث",
-      "description": "\u200Fيقدم \u2066Coreverse Engine\u2069، بفضل أنظمة العرض التي تدعم \u2066Vulkan\u2069 و\u2066OpenGL\u2069، للمطورين إمكانية التطوير باستخدام \u2066C\u2069 و\u2066C++\u2069 و\u2066C#\u2069 و\u2066Dart\u2069 و\u2066Java\u2069 و\u2066JavaScript\u2069 و\u2066Kotlin\u2069 و\u2066Swift\u2069 و\u2066TypeScript\u2069، كما يوفر تحسينات متقدمة على النواة وإمكانية إنشاء عوالم بأنظمة فيزياء مختلفة",
+      "description": "\u200Fيقدم \u2066Coreverse Engine\u2069، بفضل أنظمة العرض التي تدعم \u2066Vulkan\u2069 و\u2066OpenGL\u2069، للمطورين إمكانية التطوير باستخدام \u2066C\u2069 و\u2066C++\u2069 و\u2066C#\u2069 و\u2066Dart\u2069 و\u2066Java\u2069 و\u2066JavaScript\u2069 و\u2066Kotlin\u2069\u2066Rust\u2069 و\u2066Swift\u2069 و\u2066TypeScript\u2069، كما يوفر تحسينات متقدمة على النواة وإمكانية إنشاء عوالم بأنظمة فيزياء مختلفة",
       "primaryAction": "\u200Fابدأ البناء",
       "secondaryAction": "\u200Fاستكشف الميزات",
       "previewLabel": "\u200Fمعاينة وقت التشغيل",

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -17,9 +17,16 @@ export const metadata: Metadata = {
   description: "A modern game engine website.",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  userScalable: true,
+};
+
 const RootLayout = ({
-  children,
-}: Readonly<{
+                      children,
+                    }: Readonly<{
   children: React.ReactNode;
 }>) => {
   return (
@@ -28,7 +35,7 @@ const RootLayout = ({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`}
     >
-      <body className="flex min-h-screen flex-col bg-background font-sans text-foreground">{children}</body>
+    <body className="flex min-h-screen flex-col bg-background font-sans text-foreground">{children}</body>
     </html>
   );
 };

@@ -5,7 +5,10 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  allowedDevOrigins: ["192.168.56.1"],
+  allowedDevOrigins: [
+    "192.168.56.1",
+    "192.168.1.130"
+  ],
 
   webpack(config) {
     const assetRule = config.module.rules.find(

@@ -9,6 +9,7 @@ import type { Locale } from "@/i18n/routing";
 import { useScrollContext, type SectionId } from "@/context/scroll-context";
 import { useCurrentUser } from "@/hooks/use-current-user";
 import { UserMenu } from "@/features/auth/user-menu";
+import { useIsPortrait } from "@/hooks/use-is-portrait";
 
 type Theme = "light" | "dark";
 
@@ -75,15 +76,21 @@ const MoonIcon = () => (
 
 export const TopBar = () => {
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const isPortrait = useIsPortrait();
   const theme = useSyncExternalStore(subscribeTheme, getPreferredTheme, getServerTheme);
+
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+
   const brand = useTranslations("brand");
   const navigation = useTranslations("navigation");
   const themeTranslations = useTranslations("theme");
   const language = useTranslations("language");
   const authTopBar = useTranslations("auth.topBar");
+
   const { navigate, activeSection } = useScrollContext();
   const { user, isLoading: isUserLoading } = useCurrentUser();
 
@@ -108,8 +115,13 @@ export const TopBar = () => {
     setIsLanguageOpen(false);
   };
 
+  const handleNavigate = (id: SectionId) => {
+    navigate(id);
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <header className="z-50 border-b border-border/70 bg-background/80 px-4 py-3 backdrop-blur-xl sm:px-6">
+    <header className="relative z-50 border-b border-border/70 bg-background/80 px-4 py-3 backdrop-blur-xl sm:px-6">
       <div className="mx-auto flex max-w-7xl items-center gap-4">
         <button
           type="button"
@@ -127,7 +139,7 @@ export const TopBar = () => {
           </span>
         </button>
 
-        <nav aria-label="Primary navigation" className="ml-auto hidden items-center gap-1 md:flex">
+        <nav aria-label="Primary navigation" className={`ml-auto items-center gap-1 ${isPortrait ? "hidden md:flex" : "flex"}`}>
           {navigationItems.map((item) => (
             <Button
               key={item.id}
@@ -147,7 +159,7 @@ export const TopBar = () => {
           variant="outline"
           size="icon"
           aria-label={themeLabel}
-          className="ml-auto size-10 rounded-full border-blue-500/30 bg-background/70 text-blue-600 shadow-sm shadow-blue-500/10 hover:bg-blue-500/10 dark:text-blue-300 md:ml-2"
+          className={`size-10 rounded-full border-blue-500/30 bg-background/70 text-blue-600 shadow-sm shadow-blue-500/10 hover:bg-blue-500/10 dark:text-blue-300 ${isPortrait ? "ml-auto md:ml-2" : "ml-2"}`}
           onClick={handleThemeToggle}
         >
           {theme === "dark" ? <SunIcon /> : <MoonIcon />}
@@ -204,7 +216,43 @@ export const TopBar = () => {
             </Button>
           )}
         </div>
+
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon"
+          aria-label="Toggle Menu"
+          className={`md:hidden ${isPortrait ? "flex" : "hidden"} ml-1 text-muted-foreground hover:text-foreground`}
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="size-6 fill-none stroke-current stroke-2">
+            {isMobileMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            )}
+          </svg>
+        </Button>
       </div>
+
+      {isPortrait && isMobileMenuOpen && (
+        <div className="absolute left-0 top-full w-full border-b border-border/70 bg-background/95 p-4 shadow-lg backdrop-blur-xl md:hidden">
+          <nav aria-label="Mobile navigation" className="flex flex-col gap-2">
+            {navigationItems.map((item) => (
+              <Button
+                key={item.id}
+                type="button"
+                variant="ghost"
+                data-active={activeSection === item.id}
+                className="h-12 w-full justify-start rounded-xl px-4 text-base text-muted-foreground hover:bg-blue-500/10 hover:text-foreground data-[active=true]:bg-blue-500/10 data-[active=true]:text-foreground"
+                onClick={() => handleNavigate(item.id)}
+              >
+                {navigation(item.key)}
+              </Button>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 };

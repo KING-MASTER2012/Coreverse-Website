@@ -14,7 +14,7 @@ type UserMenuProps = {
 };
 
 export const UserMenu = ({ user }: UserMenuProps) => {
-  const t = useTranslations("auth.userMenu");
+  const t = useTranslations("userMenu.userMenu");
   const [isPending, startTransition] = useTransition();
 
   const handleSignOut = () => {
@@ -29,7 +29,7 @@ export const UserMenu = ({ user }: UserMenuProps) => {
         <button
           type="button"
           className="rounded-full outline-none focus-visible:ring-2 focus-visible:ring-blue-500/40"
-          aria-label={t("openMenu")}
+          aria-label={t("userMenu")}
         >
           <UserAvatar userId={user.id} username={user.username} size={40} className="border border-border/70" />
         </button>
