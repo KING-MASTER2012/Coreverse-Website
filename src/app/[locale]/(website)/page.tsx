@@ -1,5 +1,8 @@
 import { getTranslations } from "next-intl/server";
+import { InstallPanel } from "@/features/install/install-panel";
 import { Button } from "@/components/ui/Button/button";
+import {CommunityPanel} from "@/features/community/community-panel";
+import {FeaturesPanel} from "@/features/features/features-panel";
 
 type HomeStat = {
   value: string;
@@ -30,7 +33,7 @@ const Home = async () => {
                 <a href="#install">{t("primaryAction")}</a>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-12 rounded-full border-blue-500/25 bg-background/60 px-6 hover:bg-blue-500/10">
-                <a href="#community">{t("secondaryAction")}</a>
+                <a href="#features">{t("secondaryAction")}</a>
               </Button>
             </div>
           </div>
@@ -41,7 +44,7 @@ const Home = async () => {
               <div className="mb-8 flex items-center justify-between">
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">{t("previewLabel")}</p>
-                  <p className="text-2xl font-semibold text-foreground">Coreverse Lab</p>
+                  <p className="text-2xl font-semibold text-foreground">{t("labName")}</p>
                 </div>
                 <div className="rounded-full border border-blue-500/25 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
                   {t("liveStatus")}
@@ -60,8 +63,9 @@ const Home = async () => {
         </div>
       </section>
 
-      <section id="install" className="sr-only" aria-label={navigation("install")} />
-      <section id="community" className="sr-only" aria-label={navigation("community")} />
+      <InstallPanel />
+      <FeaturesPanel />
+      <CommunityPanel />
       <section id="faq" className="sr-only" aria-label={navigation("faq")} />
     </main>
   );
