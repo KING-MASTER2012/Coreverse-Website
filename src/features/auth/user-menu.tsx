@@ -14,7 +14,7 @@ type UserMenuProps = {
 };
 
 export const UserMenu = ({ user }: UserMenuProps) => {
-  const t = useTranslations("userMenu.userMenu");
+  const t = useTranslations("userMenu");
   const [isPending, startTransition] = useTransition();
 
   const handleSignOut = () => {
