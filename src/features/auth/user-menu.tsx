@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { HoverCard as HoverCardPrimitive } from "radix-ui";
 
 import { signOut } from "./actions";
+import { createClient } from "@/supabase/client";
 import type { CurrentUser } from "@/hooks/use-current-user";
 import { UserAvatar } from "@/components/ui/UserAvatar/user-avatar";
 import { Button } from "@/components/ui/Button/button";
@@ -18,8 +19,13 @@ export const UserMenu = ({ user }: UserMenuProps) => {
   const [isPending, startTransition] = useTransition();
 
   const handleSignOut = () => {
-    startTransition(() => {
-      void signOut();
+    startTransition(async () => {
+      const supabase = createClient();
+      // Clears the browser session immediately and fires onAuthStateChange,
+      // so useCurrentUser updates the UI without waiting for navigation.
+      await supabase.auth.signOut();
+      // Clears server-side cookies and redirects.
+      await signOut();
     });
   };
 
