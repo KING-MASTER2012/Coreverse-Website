@@ -1,4 +1,4 @@
-name: CodeQL
+name: "CodeQL"
 
 on:
   push:
@@ -14,12 +14,33 @@ on:
 
 jobs:
   analyze:
+    name: Analyze
+
+    runs-on: ubuntu-latest
+
     permissions:
       actions: read
       contents: read
       security-events: write
 
-    uses: github/codeql-action/.github/workflows/codeql.yml@v4
+    strategy:
+      fail-fast: false
 
-    with:
-      languages: javascript-typescript
+      matrix:
+        language:
+          - javascript-typescript
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v4
+        with:
+          languages: ${{ matrix.language }}
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v4
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v4
