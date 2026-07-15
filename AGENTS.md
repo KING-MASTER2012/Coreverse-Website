@@ -33,6 +33,7 @@ coreverse-website/
         - ci.yml
         - codeql.yml
         - deploy.yml
+        - lint.yml
      - CODE_OF_CONDUCT.md
      - CONTRIBUTING.md
      - dependabot.yml
@@ -45,6 +46,9 @@ coreverse-website/
        - Apple-Logo.svg
        - coreverse-engine.svg
        - coreverse-engine-emblem.svg
+       - GitHub_Invertocat_Black.svg
+       - GitHub_Invertocat_white.svg
+       - Google-Logo.svg
        - Linux-Logo.svg
        - OpenGL-Logo.svg
        - Vulkan-Logo.svg

@@ -223,11 +223,12 @@ export const signInWithOAuth = async (provider: OAuthProvider): Promise<void> =>
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider,
     options: {
-      redirectTo: `${process.env.NEXT_APP_URL}/api/auth/callback?next=${encodeURIComponent(`/${locale}`)}`,
+      redirectTo: `${process.env.NEXT_APP_URL}/api/auth/callback?next=/${locale}`,
     },
   });
 
   if (error || !data.url) {
+    console.error("[signInWithOAuth] error:", error?.message);
     redirect(`/${locale}/login?error=oauth`);
   }
 
