@@ -24,10 +24,21 @@ This project is a modern website off a game engine.
 ## Folder Structure
 
 coreverse-website/
-  - .agents/
-  - .idea/
-  - .next/
-  - node_modules/
+  - .github/
+     - ISSUE_TEMPLATE/
+        - bug-report.yml
+        - config.yml
+        - feature_request.yml
+     - workflows/
+        - ci.yml
+        - codeql.yml
+        - deploy.yml
+     - CODE_OF_CONDUCT.md
+     - CONTRIBUTING.md
+     - dependabot.yml
+     - FUNDING.yml
+     - pull_request_template.md
+     - SECURITY.md
   - public/
      - fonts/
      - images/
@@ -92,7 +103,7 @@ coreverse-website/
            - Label/
               - label.tsx
            - UserAvatar/
-              - user-avatar
+              - user-avatar.tsx
      - config/
      - constants/
         - i18n.json
@@ -122,6 +133,8 @@ coreverse-website/
      - generated/
        - video-manifest.ts 
      - hooks/
+       - use-current-user.ts
+       - use-is-portrait.ts
      - i18n/
         - navigation.ts
         - request.ts
@@ -148,7 +161,6 @@ coreverse-website/
      - proxy.ts
   - .editorconfig
   - .env.example
-  - .env.local
   - .gitattributes
   - .gitignore
   - AGENTS.md
@@ -157,7 +169,6 @@ coreverse-website/
   - eslint.config.mjs
   - LICENSE
   - next.config.ts
-  - next-env.d.ts
   - package.json
   - package-lock.json
   - postcss.config.mjs

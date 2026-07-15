@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Questions
+    url: https://github.com/CoreverseEngine/coreverse-website/discussions
+    about: Please ask questions in Discussions.
+
+  - name: Documentation
+    url: https://github.com/CoreverseEngine/coreverse-website
+    about: Read the documentation before opening an issue.
