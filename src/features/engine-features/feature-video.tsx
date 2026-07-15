@@ -1,6 +1,6 @@
 "use client";
 
-import { MediaPlayer, MediaOutlet } from "@vidstack/react";
+import { MediaPlayer, MediaProvider } from "@vidstack/react";
 import { FeatureControls } from "./feature-controls";
 import type { FeatureVideo as FeatureVideoItem } from "./types";
 
@@ -21,7 +21,6 @@ export const FeatureVideo = ({
                              }: Props) => {
   return (
     <div className="space-y-5">
-
       <div className="overflow-hidden rounded-3xl border border-border">
         <MediaPlayer
           className="aspect-video w-full"
@@ -30,7 +29,7 @@ export const FeatureVideo = ({
           playsInline
           onEnded={onNext}
         >
-          <MediaOutlet />
+          <MediaProvider />
         </MediaPlayer>
       </div>
 
@@ -41,7 +40,6 @@ export const FeatureVideo = ({
         onNext={onNext}
         onChange={onChange}
       />
-
     </div>
   );
 };
