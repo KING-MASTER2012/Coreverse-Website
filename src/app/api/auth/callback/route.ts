@@ -8,9 +8,10 @@ const deriveUsername = (metadata: Record<string, unknown>, email: string): strin
 };
 
 export const GET = async (request: NextRequest) => {
-  const { searchParams, origin } = new URL(request.url);
+  const { searchParams } = new URL(request.url);
   const code = searchParams.get("code");
   const next = searchParams.get("next") ?? "/";
+  const baseUrl = process.env.NEXT_APP_URL;
 
   if (code) {
     const supabase = await createClient();
@@ -24,9 +25,9 @@ export const GET = async (request: NextRequest) => {
         await supabase.auth.updateUser({ data: { username } });
       }
 
-      return NextResponse.redirect(`${origin}${next}`);
+      return NextResponse.redirect(`${baseUrl}${next}`);
     }
   }
 
-  return NextResponse.redirect(`${origin}/login?error=oauth`);
+  return NextResponse.redirect(`${baseUrl}/login?error=oauth`);
 };

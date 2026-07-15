@@ -5,7 +5,8 @@ import { redirect } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 
 import { createClient } from "@/supabase/server";
-import { sendWelcomeEmail } from "@/services/brevo";
+import { createAdminClient } from "@/supabase/admin";
+import { sendWelcomeEmail, sendPasswordResetEmail } from "@/services/brevo";
 import { uploadAvatar } from "@/services/avatar-storage";
 import {
   createLoginSchema,
@@ -16,6 +17,7 @@ import {
 import type { AuthActionState, OAuthProvider } from "./types";
 
 const MAX_AVATAR_SIZE_BYTES = 5 * 1024 * 1024;
+const RESET_COOLDOWN_SECONDS= 60;
 
 export const signIn = async (_prevState: AuthActionState, formData: FormData): Promise<AuthActionState> => {
   const locale = await getLocale();
@@ -140,13 +142,50 @@ export const requestPasswordReset = async (
     return { status: "error", fieldErrors: parsed.error.flatten().fieldErrors };
   }
 
-  const supabase = await createClient();
-  const { error } = await supabase.auth.resetPasswordForEmail(parsed.data.email, {
-    redirectTo: `${process.env.NEXT_APP_URL}/${locale}/reset-password`,
-  });
+  const admin = createAdminClient();
 
-  if (error) {
-    return { status: "error", message: t("errors.generic") };
+  const { data: throttleRow, error: throttleError } = await admin
+    .from("password_reset_throttle")
+    .select("last_requested_at")
+    .eq("email", parsed.data.email)
+    .maybeSingle();
+
+  if (throttleError) {
+    console.error("[requestPasswordReset] throttle lookup error:", throttleError.message);
+  }
+
+  const isThrottled =
+    throttleRow !== null &&
+    Date.now() - new Date(throttleRow.last_requested_at).getTime() < RESET_COOLDOWN_SECONDS * 1000;
+
+  console.log("[requestPasswordReset] throttled?", isThrottled, "row:", throttleRow);
+
+  if (!isThrottled) {
+    const { error: upsertError } = await admin
+      .from("password_reset_throttle")
+      .upsert({ email: parsed.data.email, last_requested_at: new Date().toISOString() });
+
+    if (upsertError) {
+      console.error("[requestPasswordReset] throttle upsert error:", upsertError.message);
+    }
+
+    const { data, error } = await admin.auth.admin.generateLink({
+      type: "recovery",
+      email: parsed.data.email,
+      options: {
+        redirectTo: `${process.env.NEXT_APP_URL}/${locale}/reset-password`,
+      },
+    });
+
+    console.log("[requestPasswordReset] generateLink:", { error, actionLink: data?.properties?.action_link });
+
+    if (!error && data.properties?.action_link) {
+      await sendPasswordResetEmail({
+        email: parsed.data.email,
+        subject: t("resetEmail.subject"),
+        bodyHtml: `<p>${t("resetEmail.body")}</p><p><a href="${data.properties.action_link}">${t("resetEmail.cta")}</a></p>`,
+      });
+    }
   }
 
   return { status: "success", message: t("forgotPassword.successMessage") };
@@ -170,13 +209,21 @@ export const updatePassword = async (
   }
 
   const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    return { status: "error", message: t("errors.sessionExpired") };
+  }
+
   const { error } = await supabase.auth.updateUser({ password: parsed.data.password });
 
   if (error) {
     return { status: "error", message: t("errors.generic") };
   }
 
-  redirect(`/${locale}/login?reset=success`);
+  redirect(`/${locale}`);
 };
 
 export const signInWithOAuth = async (provider: OAuthProvider): Promise<void> => {

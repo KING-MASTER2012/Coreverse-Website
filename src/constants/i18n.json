@@ -196,7 +196,11 @@
         "passwordLabel": "New password",
         "confirmPasswordLabel": "Confirm new password",
         "submit": "Update password",
-        "submitting": "Updating..."
+        "submitting": "Updating...",
+        "emailLabel": "example@mail.com",
+        "invalidLinkTitle": "Invalid or expired link",
+        "invalidLinkSubtitle": "This password reset link is invalid or has expired. Please request a new password reset email.",
+        "requestNewLink": "Request a new reset link"
       },
       "oauth": {
         "continueWithGoogle": "Continue with Google",
@@ -217,7 +221,13 @@
         "invalidCredentials": "Incorrect email or password.",
         "emailInUse": "This email is already in use.",
         "generic": "Something went wrong. Please try again.",
-        "avatarInvalid": "The profile picture is invalid or too large."
+        "avatarInvalid": "The profile picture is invalid or too large.",
+        "sessionExpired": "Your session has expired. Please sign in again."
+      },
+      "resetEmail": {
+        "subject": "Reset your Coreverse Engine password",
+        "body": "We received a request to reset the password for your Coreverse Engine account. If you made this request, click the button below to create a new password. If you didn't request a password reset, you can safely ignore this email.",
+        "cta": "Reset Password"
       }
     }
   },
@@ -413,33 +423,43 @@
         "backToLogin": "Girişe dön"
       },
       "resetPassword": {
-        "title": "Yeni şifre belirle",
-        "subtitle": "Hesabın için yeni bir şifre oluştur",
-        "passwordLabel": "Yeni şifre",
-        "confirmPasswordLabel": "Yeni şifre (tekrar)",
-        "submit": "Şifreyi güncelle",
-        "submitting": "Güncelleniyor..."
+        "title": "Yeni bir parola belirleyin",
+        "subtitle": "Hesabınız için yeni bir parola oluşturun",
+        "passwordLabel": "Yeni parola",
+        "confirmPasswordLabel": "Yeni parolayı doğrulayın",
+        "submit": "Parolayı güncelle",
+        "submitting": "Güncelleniyor...",
+        "emailLabel": "ornek@mail.com",
+        "invalidLinkTitle": "Geçersiz veya süresi dolmuş bağlantı",
+        "invalidLinkSubtitle": "Bu parola sıfırlama bağlantısı geçersiz veya süresi dolmuş. Lütfen yeni bir parola sıfırlama e-postası isteyin.",
+        "requestNewLink": "Yeni bir sıfırlama bağlantısı iste"
       },
       "oauth": {
         "continueWithGoogle": "Google ile devam et",
         "continueWithGithub": "GitHub ile devam et"
       },
       "welcomeEmail": {
-        "subject": "Coreverse Engine'e hoş geldin!",
-        "body": "Merhaba {username}, Coreverse Engine ailesine katıldığın için teşekkürler."
+        "subject": "Coreverse Engine'e hoş geldiniz!",
+        "body": "Merhaba {username}, Coreverse Engine ailesine katıldığınız için teşekkür ederiz."
       },
       "errors": {
-        "emailInvalid": "Geçerli bir e-posta adresi gir.",
-        "passwordMin": "Şifre en az 6 karakter olmalı.",
-        "usernameMin": "Kullanıcı adı en az 3 karakter olmalı.",
-        "usernameMax": "Kullanıcı adı en fazla 24 karakter olabilir.",
-        "usernamePattern": "Kullanıcı adı sadece harf, rakam ve alt çizgi içerebilir.",
-        "passwordMismatch": "Şifreler eşleşmiyor.",
-        "acceptTermsRequired": "Devam etmek için şartları kabul etmelisin.",
-        "invalidCredentials": "E-posta veya şifre hatalı.",
-        "emailInUse": "Bu e-posta zaten kullanımda.",
-        "generic": "Bir şeyler ters gitti, lütfen tekrar dene.",
-        "avatarInvalid": "Profil fotoğrafı geçersiz ya da çok büyük."
+        "emailInvalid": "Lütfen geçerli bir e-posta adresi girin.",
+        "passwordMin": "Parola en az 6 karakter uzunluğunda olmalıdır.",
+        "usernameMin": "Kullanıcı adı en az 3 karakter uzunluğunda olmalıdır.",
+        "usernameMax": "Kullanıcı adı en fazla 24 karakter uzunluğunda olabilir.",
+        "usernamePattern": "Kullanıcı adı yalnızca harfler, sayılar ve alt çizgi (_) içerebilir.",
+        "passwordMismatch": "Parolalar eşleşmiyor.",
+        "acceptTermsRequired": "Devam etmek için şartları kabul etmelisiniz.",
+        "invalidCredentials": "E-posta adresi veya parola hatalı.",
+        "emailInUse": "Bu e-posta adresi zaten kullanılıyor.",
+        "generic": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+        "avatarInvalid": "Profil resmi geçersiz veya çok büyük.",
+        "sessionExpired": "Oturumunuzun süresi doldu. Lütfen tekrar giriş yapın."
+      },
+      "resetEmail": {
+        "subject": "Coreverse Engine parolanızı sıfırlayın",
+        "body": "Coreverse Engine hesabınızın parolasını sıfırlamak için bir istek aldık. Bu isteği siz yaptıysanız, yeni bir parola oluşturmak için aşağıdaki düğmeye tıklayın. Parola sıfırlama isteğinde bulunmadıysanız, bu e-postayı güvenle yok sayabilirsiniz.",
+        "cta": "Parolayı Sıfırla"
       }
     }
   },
@@ -635,12 +655,16 @@
         "backToLogin": "Retour à la connexion"
       },
       "resetPassword": {
-        "title": "Définir un nouveau mot de passe",
+        "title": "Définissez un nouveau mot de passe",
         "subtitle": "Créez un nouveau mot de passe pour votre compte",
         "passwordLabel": "Nouveau mot de passe",
-        "confirmPasswordLabel": "Confirmer le nouveau mot de passe",
+        "confirmPasswordLabel": "Confirmez le nouveau mot de passe",
         "submit": "Mettre à jour le mot de passe",
-        "submitting": "Mise à jour en cours..."
+        "submitting": "Mise à jour...",
+        "emailLabel": "exemple@mail.com",
+        "invalidLinkTitle": "Lien invalide ou expiré",
+        "invalidLinkSubtitle": "Ce lien de réinitialisation du mot de passe est invalide ou a expiré. Veuillez demander un nouveau courriel de réinitialisation du mot de passe.",
+        "requestNewLink": "Demander un nouveau lien de réinitialisation"
       },
       "oauth": {
         "continueWithGoogle": "Continuer avec Google",
@@ -655,13 +679,19 @@
         "passwordMin": "Le mot de passe doit contenir au moins 6 caractères.",
         "usernameMin": "Le nom d'utilisateur doit contenir au moins 3 caractères.",
         "usernameMax": "Le nom d'utilisateur peut contenir jusqu'à 24 caractères.",
-        "usernamePattern": "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des tirets bas.",
+        "usernamePattern": "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des traits de soulignement.",
         "passwordMismatch": "Les mots de passe ne correspondent pas.",
         "acceptTermsRequired": "Vous devez accepter les conditions pour continuer.",
         "invalidCredentials": "Adresse e-mail ou mot de passe incorrect.",
         "emailInUse": "Cette adresse e-mail est déjà utilisée.",
         "generic": "Une erreur s'est produite. Veuillez réessayer.",
-        "avatarInvalid": "La photo de profil est invalide ou trop volumineuse."
+        "avatarInvalid": "La photo de profil est invalide ou trop volumineuse.",
+        "sessionExpired": "Votre session a expiré. Veuillez vous reconnecter."
+      },
+      "resetEmail": {
+        "subject": "Réinitialisez votre mot de passe Coreverse Engine",
+        "body": "Nous avons reçu une demande de réinitialisation du mot de passe de votre compte Coreverse Engine. Si vous êtes à l'origine de cette demande, cliquez sur le bouton ci-dessous pour créer un nouveau mot de passe. Si vous n'avez pas demandé de réinitialisation de mot de passe, vous pouvez ignorer cet e-mail en toute sécurité.",
+        "cta": "Réinitialiser le mot de passe"
       }
     }
   },
@@ -862,7 +892,11 @@
         "passwordLabel": "Neues Passwort",
         "confirmPasswordLabel": "Neues Passwort bestätigen",
         "submit": "Passwort aktualisieren",
-        "submitting": "Wird aktualisiert..."
+        "submitting": "Wird aktualisiert...",
+        "emailLabel": "beispiel@mail.com",
+        "invalidLinkTitle": "Ungültiger oder abgelaufener Link",
+        "invalidLinkSubtitle": "Dieser Link zum Zurücksetzen des Passworts ist ungültig oder abgelaufen. Bitte fordern Sie eine neue E-Mail zum Zurücksetzen des Passworts an.",
+        "requestNewLink": "Neuen Link zum Zurücksetzen anfordern"
       },
       "oauth": {
         "continueWithGoogle": "Mit Google fortfahren",
@@ -870,7 +904,7 @@
       },
       "welcomeEmail": {
         "subject": "Willkommen bei Coreverse Engine!",
-        "body": "Hallo {username}, vielen Dank, dass Sie der Coreverse Engine-Familie beigetreten sind."
+        "body": "Hallo {username}, danke, dass Sie Teil der Coreverse Engine-Familie geworden sind."
       },
       "errors": {
         "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
@@ -883,7 +917,13 @@
         "invalidCredentials": "Falsche E-Mail-Adresse oder falsches Passwort.",
         "emailInUse": "Diese E-Mail-Adresse wird bereits verwendet.",
         "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
-        "avatarInvalid": "Das Profilbild ist ungültig oder zu groß."
+        "avatarInvalid": "Das Profilbild ist ungültig oder zu groß.",
+        "sessionExpired": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an."
+      },
+      "resetEmail": {
+        "subject": "Setzen Sie Ihr Coreverse Engine-Passwort zurück",
+        "body": "Wir haben eine Anfrage zum Zurücksetzen des Passworts für Ihr Coreverse Engine-Konto erhalten. Wenn Sie diese Anfrage gestellt haben, klicken Sie auf die Schaltfläche unten, um ein neues Passwort zu erstellen. Falls Sie kein Zurücksetzen des Passworts angefordert haben, können Sie diese E-Mail einfach ignorieren.",
+        "cta": "Passwort zurücksetzen"
       }
     }
   },
@@ -1079,12 +1119,16 @@
         "backToLogin": "Volver al inicio de sesión"
       },
       "resetPassword": {
-        "title": "Establecer una nueva contraseña",
+        "title": "Establece una nueva contraseña",
         "subtitle": "Crea una nueva contraseña para tu cuenta",
         "passwordLabel": "Nueva contraseña",
-        "confirmPasswordLabel": "Confirmar nueva contraseña",
+        "confirmPasswordLabel": "Confirma la nueva contraseña",
         "submit": "Actualizar contraseña",
-        "submitting": "Actualizando..."
+        "submitting": "Actualizando...",
+        "emailLabel": "ejemplo@correo.com",
+        "invalidLinkTitle": "Enlace no válido o caducado",
+        "invalidLinkSubtitle": "Este enlace para restablecer la contraseña no es válido o ha caducado. Solicita un nuevo correo para restablecer la contraseña.",
+        "requestNewLink": "Solicitar un nuevo enlace de restablecimiento"
       },
       "oauth": {
         "continueWithGoogle": "Continuar con Google",
@@ -1105,7 +1149,13 @@
         "invalidCredentials": "Correo electrónico o contraseña incorrectos.",
         "emailInUse": "Este correo electrónico ya está en uso.",
         "generic": "Algo salió mal. Por favor, inténtalo de nuevo.",
-        "avatarInvalid": "La foto de perfil no es válida o es demasiado grande."
+        "avatarInvalid": "La imagen de perfil no es válida o es demasiado grande.",
+        "sessionExpired": "Tu sesión ha caducado. Por favor, inicia sesión de nuevo."
+      },
+      "resetEmail": {
+        "subject": "Restablece tu contraseña de Coreverse Engine",
+        "body": "Hemos recibido una solicitud para restablecer la contraseña de tu cuenta de Coreverse Engine. Si realizaste esta solicitud, haz clic en el botón de abajo para crear una nueva contraseña. Si no solicitaste el restablecimiento de la contraseña, puedes ignorar este correo electrónico con seguridad.",
+        "cta": "Restablecer contraseña"
       }
     }
   },
@@ -1301,12 +1351,16 @@
         "backToLogin": "Voltar ao início de sessão"
       },
       "resetPassword": {
-        "title": "Definir uma nova palavra-passe",
+        "title": "Defina uma nova palavra-passe",
         "subtitle": "Crie uma nova palavra-passe para a sua conta",
         "passwordLabel": "Nova palavra-passe",
-        "confirmPasswordLabel": "Confirmar nova palavra-passe",
+        "confirmPasswordLabel": "Confirme a nova palavra-passe",
         "submit": "Atualizar palavra-passe",
-        "submitting": "A atualizar..."
+        "submitting": "A atualizar...",
+        "emailLabel": "exemplo@mail.com",
+        "invalidLinkTitle": "Ligação inválida ou expirada",
+        "invalidLinkSubtitle": "Esta ligação para redefinir a palavra-passe é inválida ou expirou. Solicite um novo e-mail de redefinição da palavra-passe.",
+        "requestNewLink": "Solicitar uma nova ligação de redefinição"
       },
       "oauth": {
         "continueWithGoogle": "Continuar com o Google",
@@ -1325,9 +1379,15 @@
         "passwordMismatch": "As palavras-passe não coincidem.",
         "acceptTermsRequired": "Tem de aceitar os termos para continuar.",
         "invalidCredentials": "E-mail ou palavra-passe incorretos.",
-        "emailInUse": "Este e-mail já está a ser utilizado.",
+        "emailInUse": "Este endereço de e-mail já está a ser utilizado.",
         "generic": "Ocorreu um erro. Tente novamente.",
-        "avatarInvalid": "A imagem de perfil é inválida ou demasiado grande."
+        "avatarInvalid": "A fotografia de perfil é inválida ou demasiado grande.",
+        "sessionExpired": "A sua sessão expirou. Inicie sessão novamente."
+      },
+      "resetEmail": {
+        "subject": "Redefina a sua palavra-passe do Coreverse Engine",
+        "body": "Recebemos um pedido para redefinir a palavra-passe da sua conta Coreverse Engine. Se fez este pedido, clique no botão abaixo para criar uma nova palavra-passe. Se não solicitou a redefinição da palavra-passe, pode ignorar este e-mail com segurança.",
+        "cta": "Redefinir palavra-passe"
       }
     }
   },
@@ -1528,28 +1588,38 @@
         "passwordLabel": "新密码",
         "confirmPasswordLabel": "确认新密码",
         "submit": "更新密码",
-        "submitting": "正在更新..."
+        "submitting": "正在更新...",
+        "emailLabel": "example@mail.com",
+        "invalidLinkTitle": "链接无效或已过期",
+        "invalidLinkSubtitle": "此密码重置链接无效或已过期。请重新请求一封密码重置邮件。",
+        "requestNewLink": "请求新的重置链接"
       },
       "oauth": {
         "continueWithGoogle": "使用 Google 继续",
         "continueWithGithub": "使用 GitHub 继续"
       },
       "welcomeEmail": {
-        "subject": "欢迎加入 Coreverse Engine！",
+        "subject": "欢迎使用 Coreverse Engine！",
         "body": "您好，{username}，感谢您加入 Coreverse Engine 大家庭。"
       },
       "errors": {
         "emailInvalid": "请输入有效的电子邮箱地址。",
-        "passwordMin": "密码长度至少需要 6 个字符。",
-        "usernameMin": "用户名长度至少需要 3 个字符。",
-        "usernameMax": "用户名最多可包含 24 个字符。",
+        "passwordMin": "密码长度必须至少为 6 个字符。",
+        "usernameMin": "用户名长度必须至少为 3 个字符。",
+        "usernameMax": "用户名长度不能超过 24 个字符。",
         "usernamePattern": "用户名只能包含字母、数字和下划线。",
         "passwordMismatch": "两次输入的密码不一致。",
-        "acceptTermsRequired": "您必须接受服务条款才能继续。",
+        "acceptTermsRequired": "您必须接受条款才能继续。",
         "invalidCredentials": "电子邮箱或密码错误。",
-        "emailInUse": "该电子邮箱已被使用。",
-        "generic": "发生了一些错误。请重试。",
-        "avatarInvalid": "个人资料图片无效或过大。"
+        "emailInUse": "此电子邮箱已被使用。",
+        "generic": "发生错误。请重试。",
+        "avatarInvalid": "头像无效或文件过大。",
+        "sessionExpired": "您的会话已过期。请重新登录。"
+      },
+      "resetEmail": {
+        "subject": "重置您的 Coreverse Engine 密码",
+        "body": "我们收到了重置您的 Coreverse Engine 账户密码的请求。如果这是您本人发起的请求，请点击下方按钮创建新密码。如果您没有请求重置密码，可以放心忽略此邮件。",
+        "cta": "重置密码"
       }
     }
   },
@@ -1745,12 +1815,16 @@
         "backToLogin": "Вернуться ко входу"
       },
       "resetPassword": {
-        "title": "Установить новый пароль",
-        "subtitle": "Создайте новый пароль для своей учётной записи",
+        "title": "Установите новый пароль",
+        "subtitle": "Создайте новый пароль для своей учетной записи",
         "passwordLabel": "Новый пароль",
         "confirmPasswordLabel": "Подтвердите новый пароль",
         "submit": "Обновить пароль",
-        "submitting": "Обновление..."
+        "submitting": "Обновление...",
+        "emailLabel": "example@mail.com",
+        "invalidLinkTitle": "Недействительная или просроченная ссылка",
+        "invalidLinkSubtitle": "Эта ссылка для сброса пароля недействительна или срок её действия истёк. Пожалуйста, запросите новое письмо для сброса пароля.",
+        "requestNewLink": "Запросить новую ссылку для сброса"
       },
       "oauth": {
         "continueWithGoogle": "Продолжить с Google",
@@ -1771,7 +1845,13 @@
         "invalidCredentials": "Неверный адрес электронной почты или пароль.",
         "emailInUse": "Этот адрес электронной почты уже используется.",
         "generic": "Что-то пошло не так. Пожалуйста, попробуйте снова.",
-        "avatarInvalid": "Изображение профиля недействительно или слишком большое."
+        "avatarInvalid": "Изображение профиля недействительно или слишком большое.",
+        "sessionExpired": "Срок действия вашей сессии истёк. Пожалуйста, войдите снова."
+      },
+      "resetEmail": {
+        "subject": "Сбросьте пароль Coreverse Engine",
+        "body": "Мы получили запрос на сброс пароля для вашей учетной записи Coreverse Engine. Если вы отправили этот запрос, нажмите кнопку ниже, чтобы создать новый пароль. Если вы не запрашивали сброс пароля, можете спокойно проигнорировать это письмо.",
+        "cta": "Сбросить пароль"
       }
     }
   },
@@ -1972,7 +2052,11 @@
         "passwordLabel": "新しいパスワード",
         "confirmPasswordLabel": "新しいパスワードを確認",
         "submit": "パスワードを更新",
-        "submitting": "更新中..."
+        "submitting": "更新中...",
+        "emailLabel": "example@mail.com",
+        "invalidLinkTitle": "無効または期限切れのリンク",
+        "invalidLinkSubtitle": "このパスワードリセットリンクは無効であるか、有効期限が切れています。新しいパスワードリセットメールをリクエストしてください。",
+        "requestNewLink": "新しいリセットリンクをリクエスト"
       },
       "oauth": {
         "continueWithGoogle": "Googleで続行",
@@ -1980,7 +2064,7 @@
       },
       "welcomeEmail": {
         "subject": "Coreverse Engineへようこそ！",
-        "body": "こんにちは {username} さん、Coreverse Engine ファミリーへご参加いただきありがとうございます。"
+        "body": "こんにちは {username} さん、Coreverse Engineファミリーへようこそ。ご参加いただきありがとうございます。"
       },
       "errors": {
         "emailInvalid": "有効なメールアドレスを入力してください。",
@@ -1993,7 +2077,13 @@
         "invalidCredentials": "メールアドレスまたはパスワードが正しくありません。",
         "emailInUse": "このメールアドレスはすでに使用されています。",
         "generic": "問題が発生しました。もう一度お試しください。",
-        "avatarInvalid": "プロフィール画像が無効であるか、サイズが大きすぎます。"
+        "avatarInvalid": "プロフィール画像が無効であるか、サイズが大きすぎます。",
+        "sessionExpired": "セッションの有効期限が切れました。もう一度サインインしてください。"
+      },
+      "resetEmail": {
+        "subject": "Coreverse Engineのパスワードをリセット",
+        "body": "Coreverse Engineアカウントのパスワードをリセットするリクエストを受け付けました。このリクエストを行った場合は、以下のボタンをクリックして新しいパスワードを作成してください。パスワードのリセットをリクエストしていない場合は、このメールは無視していただいて問題ありません。",
+        "cta": "パスワードをリセット"
       }
     }
   },
@@ -2190,11 +2280,15 @@
       },
       "resetPassword": {
         "title": "새 비밀번호 설정",
-        "subtitle": "계정을 위한 새 비밀번호를 만드세요",
+        "subtitle": "계정의 새 비밀번호를 생성하세요",
         "passwordLabel": "새 비밀번호",
         "confirmPasswordLabel": "새 비밀번호 확인",
         "submit": "비밀번호 업데이트",
-        "submitting": "업데이트 중..."
+        "submitting": "업데이트 중...",
+        "emailLabel": "example@mail.com",
+        "invalidLinkTitle": "유효하지 않거나 만료된 링크",
+        "invalidLinkSubtitle": "이 비밀번호 재설정 링크는 유효하지 않거나 만료되었습니다. 새 비밀번호 재설정 이메일을 요청해 주세요.",
+        "requestNewLink": "새 재설정 링크 요청"
       },
       "oauth": {
         "continueWithGoogle": "Google로 계속하기",
@@ -2202,7 +2296,7 @@
       },
       "welcomeEmail": {
         "subject": "Coreverse Engine에 오신 것을 환영합니다!",
-        "body": "안녕하세요 {username}님, Coreverse Engine 가족이 되어 주셔서 감사합니다."
+        "body": "안녕하세요, {username}님. Coreverse Engine 가족이 되어 주셔서 감사합니다."
       },
       "errors": {
         "emailInvalid": "유효한 이메일 주소를 입력해 주세요.",
@@ -2215,7 +2309,13 @@
         "invalidCredentials": "이메일 또는 비밀번호가 올바르지 않습니다.",
         "emailInUse": "이미 사용 중인 이메일입니다.",
         "generic": "문제가 발생했습니다. 다시 시도해 주세요.",
-        "avatarInvalid": "프로필 사진이 유효하지 않거나 너무 큽니다."
+        "avatarInvalid": "프로필 사진이 유효하지 않거나 용량이 너무 큽니다.",
+        "sessionExpired": "세션이 만료되었습니다. 다시 로그인해 주세요."
+      },
+      "resetEmail": {
+        "subject": "Coreverse Engine 비밀번호 재설정",
+        "body": "Coreverse Engine 계정의 비밀번호를 재설정해 달라는 요청을 받았습니다. 이 요청을 직접 하셨다면 아래 버튼을 클릭하여 새 비밀번호를 생성해 주세요. 비밀번호 재설정을 요청하지 않으셨다면 이 이메일은 무시하셔도 됩니다.",
+        "cta": "비밀번호 재설정"
       }
     }
   },
@@ -2412,11 +2512,15 @@
       },
       "resetPassword": {
         "title": "Ustaw nowe hasło",
-        "subtitle": "Utwórz nowe hasło do swojego konta",
+        "subtitle": "Utwórz nowe hasło dla swojego konta",
         "passwordLabel": "Nowe hasło",
         "confirmPasswordLabel": "Potwierdź nowe hasło",
         "submit": "Zaktualizuj hasło",
-        "submitting": "Aktualizowanie..."
+        "submitting": "Aktualizowanie...",
+        "emailLabel": "example@mail.com",
+        "invalidLinkTitle": "Nieprawidłowy lub wygasły link",
+        "invalidLinkSubtitle": "Ten link do resetowania hasła jest nieprawidłowy lub wygasł. Poproś o nową wiadomość e-mail do resetowania hasła.",
+        "requestNewLink": "Poproś o nowy link do resetowania"
       },
       "oauth": {
         "continueWithGoogle": "Kontynuuj z Google",
@@ -2424,7 +2528,7 @@
       },
       "welcomeEmail": {
         "subject": "Witamy w Coreverse Engine!",
-        "body": "Witaj {username}, dziękujemy za dołączenie do rodziny Coreverse Engine."
+        "body": "Cześć {username}, dziękujemy za dołączenie do rodziny Coreverse Engine."
       },
       "errors": {
         "emailInvalid": "Wprowadź prawidłowy adres e-mail.",
@@ -2437,7 +2541,13 @@
         "invalidCredentials": "Nieprawidłowy adres e-mail lub hasło.",
         "emailInUse": "Ten adres e-mail jest już używany.",
         "generic": "Coś poszło nie tak. Spróbuj ponownie.",
-        "avatarInvalid": "Zdjęcie profilowe jest nieprawidłowe lub ma zbyt duży rozmiar."
+        "avatarInvalid": "Zdjęcie profilowe jest nieprawidłowe lub zbyt duże.",
+        "sessionExpired": "Twoja sesja wygasła. Zaloguj się ponownie."
+      },
+      "resetEmail": {
+        "subject": "Zresetuj hasło do Coreverse Engine",
+        "body": "Otrzymaliśmy prośbę o zresetowanie hasła do Twojego konta Coreverse Engine. Jeśli to Ty wysłałeś tę prośbę, kliknij poniższy przycisk, aby utworzyć nowe hasło. Jeśli nie prosiłeś o zresetowanie hasła, możesz bezpiecznie zignorować tę wiadomość e-mail.",
+        "cta": "Zresetuj hasło"
       }
     }
   },
@@ -2638,7 +2748,11 @@
         "passwordLabel": "नया पासवर्ड",
         "confirmPasswordLabel": "नए पासवर्ड की पुष्टि करें",
         "submit": "पासवर्ड अपडेट करें",
-        "submitting": "अपडेट किया जा रहा है..."
+        "submitting": "अपडेट किया जा रहा है...",
+        "emailLabel": "example@mail.com",
+        "invalidLinkTitle": "अमान्य या समाप्त हो चुका लिंक",
+        "invalidLinkSubtitle": "यह पासवर्ड रीसेट लिंक अमान्य है या इसकी अवधि समाप्त हो चुकी है। कृपया नया पासवर्ड रीसेट ईमेल अनुरोध करें।",
+        "requestNewLink": "नए रीसेट लिंक का अनुरोध करें"
       },
       "oauth": {
         "continueWithGoogle": "Google के साथ जारी रखें",
@@ -2646,20 +2760,26 @@
       },
       "welcomeEmail": {
         "subject": "Coreverse Engine में आपका स्वागत है!",
-        "body": "नमस्ते {username}, Coreverse Engine परिवार में शामिल होने के लिए धन्यवाद।"
+        "body": "नमस्ते {username}, Coreverse Engine परिवार में शामिल होने के लिए आपका धन्यवाद।"
       },
       "errors": {
         "emailInvalid": "कृपया एक मान्य ईमेल पता दर्ज करें।",
         "passwordMin": "पासवर्ड कम से कम 6 अक्षरों का होना चाहिए।",
         "usernameMin": "उपयोगकर्ता नाम कम से कम 3 अक्षरों का होना चाहिए।",
         "usernameMax": "उपयोगकर्ता नाम अधिकतम 24 अक्षरों का हो सकता है।",
-        "usernamePattern": "उपयोगकर्ता नाम में केवल अक्षर, अंक और अंडरस्कोर हो सकते हैं।",
+        "usernamePattern": "उपयोगकर्ता नाम में केवल अक्षर, संख्याएँ और अंडरस्कोर हो सकते हैं।",
         "passwordMismatch": "पासवर्ड मेल नहीं खाते।",
-        "acceptTermsRequired": "जारी रखने के लिए आपको शर्तें स्वीकार करनी होंगी।",
-        "invalidCredentials": "ईमेल या पासवर्ड गलत है।",
+        "acceptTermsRequired": "जारी रखने के लिए आपको शर्तों को स्वीकार करना होगा।",
+        "invalidCredentials": "गलत ईमेल या पासवर्ड।",
         "emailInUse": "यह ईमेल पहले से उपयोग में है।",
-        "generic": "कुछ गलत हो गया। कृपया पुनः प्रयास करें।",
-        "avatarInvalid": "प्रोफ़ाइल चित्र अमान्य है या बहुत बड़ा है।"
+        "generic": "कुछ गलत हो गया। कृपया फिर से प्रयास करें।",
+        "avatarInvalid": "प्रोफ़ाइल चित्र अमान्य है या बहुत बड़ा है।",
+        "sessionExpired": "आपका सत्र समाप्त हो गया है। कृपया फिर से साइन इन करें।"
+      },
+      "resetEmail": {
+        "subject": "अपना Coreverse Engine पासवर्ड रीसेट करें",
+        "body": "हमें आपके Coreverse Engine खाते का पासवर्ड रीसेट करने का अनुरोध प्राप्त हुआ है। यदि आपने यह अनुरोध किया है, तो नया पासवर्ड बनाने के लिए नीचे दिए गए बटन पर क्लिक करें। यदि आपने पासवर्ड रीसेट का अनुरोध नहीं किया है, तो आप इस ईमेल को सुरक्षित रूप से अनदेखा कर सकते हैं।",
+        "cta": "पासवर्ड रीसेट करें"
       }
     }
   },
@@ -2860,7 +2980,11 @@
         "passwordLabel": "\u200Fكلمة المرور الجديدة",
         "confirmPasswordLabel": "\u200Fتأكيد كلمة المرور الجديدة",
         "submit": "\u200Fتحديث كلمة المرور",
-        "submitting": "\u200Fجارٍ التحديث"
+        "submitting": "\u200F\u2066...\u2069جارٍ التحديث",
+        "emailLabel": "example@mail.com",
+        "invalidLinkTitle": "\u200Fرابط غير صالح أو منتهي الصلاحية",
+        "invalidLinkSubtitle": "\u200Fرابط إعادة تعيين كلمة المرور هذا غير صالح أو انتهت صلاحيته. يُرجى طلب رسالة جديدة لإعادة تعيين كلمة المرور",
+        "requestNewLink": "\u200Fطلب رابط جديد لإعادة التعيين"
       },
       "oauth": {
         "continueWithGoogle": "\u200F\u2066Google\u2069المتابعة باستخدام",
@@ -2868,20 +2992,26 @@
       },
       "welcomeEmail": {
         "subject": "\u200F\u2066!Coreverse Engine\u2069مرحبًا بك في",
-        "body": "\u200F\u2066Coreverse Engine\u2069،مرحبًا لانضمامك إلى عائلة\u2066{username}\u2069 شكرًا "
+        "body": "\u200F\u2066.Coreverse Engine\u2069 شكرًا لانضمامك إلى عائلة\u2066{username}\u2069،مرحبًا "
       },
       "errors": {
         "emailInvalid": "\u200Fيرجى إدخال عنوان بريد إلكتروني صالح",
         "passwordMin": "\u200Fيجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
         "usernameMin": "\u200Fيجب أن يتكون اسم المستخدم من 3 أحرف على الأقل",
-        "usernameMax": "\u200Fيمكن أن يصل اسم المستخدم إلى 24 حرفًا كحد أقصى",
-        "usernamePattern": "\u200Fيمكن أن يصل اسم المستخدم إلى 24 حرفًا كحد أقصى",
+        "usernameMax": "\u200Fيمكن أن يتكون اسم المستخدم من 24 حرفًا كحد أقصى",
+        "usernamePattern": "\u200Fيمكن أن يحتوي اسم المستخدم على الأحرف والأرقام والشرطات السفلية فقط",
         "passwordMismatch": "\u200Fكلمتا المرور غير متطابقتين",
-        "acceptTermsRequired": "\u200Fيجب عليك الموافقة على الشروط للمتابعة",
+        "acceptTermsRequired": "\u200Fيجب عليك قبول الشروط للمتابعة",
         "invalidCredentials": "\u200Fالبريد الإلكتروني أو كلمة المرور غير صحيحة",
         "emailInUse": "\u200Fهذا البريد الإلكتروني مستخدم بالفعل",
-        "generic": "\u200F\u2066.\u2069يُرجى المحاولة مرة أخرى\u2066.\u2069حدث خطأ ما",
-        "avatarInvalid": "\u200F\u2066.\u2069صورة الملف الشخصي غير صالحة أو كبيرة جدًا"
+        "generic": "\u200Fحدث خطأ ما. يُرجى المحاولة مرة أخرى",
+        "avatarInvalid": "\u200Fالصورة الشخصية غير صالحة أو كبيرة جدًا",
+        "sessionExpired": "\u200Fانتهت صلاحية جلستك. يُرجى تسجيل الدخول مرة أخرى"
+      },
+      "resetEmail": {
+        "subject": "\u200Fالخاصة بك\u2066Coreverse Engine\u2069 إعادة تعيين كلمة مرور ",
+        "body": "\u200F.إذا كنت قد قدمت هذا الطلب، فانقر على الزر أدناه لإنشاء كلمة مرور جديدة. إذا لم تطلب إعادة تعيين كلمة المرور، فيمكنك تجاهل هذا البريد الإلكتروني بأمان\u2066.Coreverse Engine\u2069تلقينا طلبًا لإعادة تعيين كلمة المرور الخاصة بحسابك في",
+        "cta": "\u200Fإعادة تعيين كلمة المرور"
       }
     }
   }

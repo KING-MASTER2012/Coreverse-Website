@@ -12,6 +12,10 @@ import { Button } from "@/components/ui/Button/button";
 
 const initialState: AuthActionState = { status: "idle" };
 
+type ResetPasswordFormProps = {
+  email: string;
+};
+
 const SubmitButton = () => {
   const { pending } = useFormStatus();
   const t = useTranslations("auth.resetPassword");
@@ -28,12 +32,17 @@ const SubmitButton = () => {
   );
 };
 
-export const ResetPasswordForm = () => {
+export const ResetPasswordForm = ({ email }: ResetPasswordFormProps) => {
   const t = useTranslations("auth.resetPassword");
   const [state, formAction] = useActionState(updatePassword, initialState);
 
   return (
     <form action={formAction} className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1.5">
+        <Label htmlFor="email">{t("emailLabel")}</Label>
+        <Input id="email" name="email" type="email" value={email} readOnly className="cursor-not-allowed text-muted-foreground" />
+      </div>
+
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="password">{t("passwordLabel")}</Label>
         <Input
