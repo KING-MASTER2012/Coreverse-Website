@@ -144,30 +144,20 @@ export const requestPasswordReset = async (
 
   const admin = createAdminClient();
 
-  const { data: throttleRow, error: throttleError } = await admin
+  const { data: throttleRow } = await admin
     .from("password_reset_throttle")
     .select("last_requested_at")
     .eq("email", parsed.data.email)
     .maybeSingle();
 
-  if (throttleError) {
-    console.error("[requestPasswordReset] throttle lookup error:", throttleError.message);
-  }
-
   const isThrottled =
     throttleRow !== null &&
     Date.now() - new Date(throttleRow.last_requested_at).getTime() < RESET_COOLDOWN_SECONDS * 1000;
 
-  console.log("[requestPasswordReset] throttled?", isThrottled, "row:", throttleRow);
-
   if (!isThrottled) {
-    const { error: upsertError } = await admin
+    await admin
       .from("password_reset_throttle")
       .upsert({ email: parsed.data.email, last_requested_at: new Date().toISOString() });
-
-    if (upsertError) {
-      console.error("[requestPasswordReset] throttle upsert error:", upsertError.message);
-    }
 
     const { data, error } = await admin.auth.admin.generateLink({
       type: "recovery",
@@ -177,9 +167,9 @@ export const requestPasswordReset = async (
       },
     });
 
-    console.log("[requestPasswordReset] generateLink:", { error, actionLink: data?.properties?.action_link });
-
-    if (!error && data.properties?.action_link) {
+    if (error) {
+      console.error("[requestPasswordReset] generateLink error:", error.message);
+    } else if (data.properties?.action_link) {
       await sendPasswordResetEmail({
         email: parsed.data.email,
         subject: t("resetEmail.subject"),

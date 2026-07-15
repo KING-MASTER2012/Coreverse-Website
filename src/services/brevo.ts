@@ -40,8 +40,9 @@ export const sendWelcomeEmail = async ({ email, username, subject, bodyHtml }: S
       }),
     });
 
-    const body = await response.text();
-    console.log(`[sendWelcomeEmail] Brevo ${response.status}:`, body);
+    if (!response.ok) {
+      console.error(`[sendWelcomeEmail] Brevo responded with ${response.status}:`, await response.text());
+    }
   } catch (err) {
     console.error("[sendWelcomeEmail] fetch failed:", err);
   }
@@ -71,8 +72,9 @@ export const sendPasswordResetEmail = async ({ email, subject, bodyHtml }: SendP
       }),
     });
 
-    const body = await response.text();
-    console.log(`[sendPasswordResetEmail] Brevo ${response.status}:`, body);
+    if (!response.ok) {
+      console.error(`[sendPasswordResetEmail] Brevo responded with ${response.status}:`, await response.text());
+    }
   } catch (err) {
     console.error("[sendPasswordResetEmail] fetch failed:", err);
   }
