@@ -1,5 +1,4 @@
-````markdown
-<div align="center">
+<div style="text-align: center;">
 
 <img src="public/images/coreverse-engine-emblem.svg" width="160" alt="Coreverse Logo"/>
 
@@ -13,12 +12,12 @@ Designed for speed, accessibility, scalability, and an exceptional developer exp
 
 <p>
 
-<img src="https://img.shields.io/badge/Next.js-16-black?logo=next.js">
-<img src="https://img.shields.io/badge/React-19-61DAFB?logo=react">
-<img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript">
-<img src="https://img.shields.io/badge/TailwindCSS-4-38B2AC?logo=tailwindcss">
-<img src="https://img.shields.io/badge/Open_Source-❤-brightgreen">
-<img src="https://img.shields.io/github/license/Coreverse/coreverse-website">
+<img src="https://img.shields.io/badge/Next.js-16-black?logo=next.js" alt="Next.js"/>
+<img src="https://img.shields.io/badge/React-19-61DAFB?logo=react" alt="React"/>
+<img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/TailwindCSS-4-38B2AC?logo=tailwindcss" alt="Tailwind CSS"/>
+<img src="https://img.shields.io/badge/Open_Source-❤-brightgreen" alt="Open Source"/>
+<img src="https://img.shields.io/github/license/KING-MASTER2012/Coreverse-Website" alt="GitHub License"/>
 
 </p>
 
@@ -71,7 +70,7 @@ The project is built with a strong focus on:
 # 🌍 Supported Languages
 
 | Language | Status |
-|----------|--------|
+| :--- | :--- |
 | 🇺🇸 English | ✅ |
 | 🇹🇷 Turkish | ✅ |
 | 🇫🇷 French | ✅ |
@@ -91,7 +90,7 @@ The project is built with a strong focus on:
 # 🛠️ Technology Stack
 
 | Technology | Purpose |
-|------------|---------|
+| :--- | :--- |
 | Next.js | React Framework |
 | React | UI Library |
 | TypeScript | Type Safety |
@@ -185,7 +184,7 @@ public/videos/
 Clone the repository:
 
 ```bash
-git clone https://github.com/Coreverse/coreverse-website.git
+git clone [https://github.com/KING-MASTER2012/Coreverse-Website.git](https://github.com/KING-MASTER2012/Coreverse-Website.git)
 ```
 
 Move into the project:
@@ -204,26 +203,47 @@ Create:
 
 ```text
 .env.local
+next-env.d.ts
 ```
 
 Example:
 
 ```env
+# Supabase (Client)
 NEXT_PUBLIC_SUPABASE_URL=
-
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
+# Supabase (Server)
+SUPABASE_PASSWORD=
+SUPABASE_SECRET_KEY=
+DATABASE_URL=
+# Brevo
+BREVO_API_KEY=
+BREVO_SMTP_KEY=
+BREVO_SMTP_LOGIN=
+BREVO_SENDER_EMAIL=
+BREVO_SENDER_NAME=
+# App
+NEXT_APP_URL=
+
 ```
 
-Start development:
+Start Development:
 
 ```bash
 npm run dev
 ```
-
+or Start Host Development:
+```bash
+npm run dev:host
+```
 Open:
 
 ```
 http://localhost:3000
+```
+or
+```
+http://192.168.1.130:3000
 ```
 
 ---
@@ -231,7 +251,7 @@ http://localhost:3000
 # 📜 Available Scripts
 
 | Command | Description |
-|---------|-------------|
+| :--- | :--- |
 | npm run dev | Development server |
 | npm run build | Production build |
 | npm run start | Production server |
@@ -328,13 +348,13 @@ Every contribution helps improve the Coreverse ecosystem.
 
 # 📄 License
 
-Licensed under the MIT License.
+Licensed under the GNU General Public License v3.0(GPL-3.0).
 
 See **LICENSE** for more information.
 
 ---
 
-<div align="center">
+<div style="text-align: center;">
 
 ## ⭐ Support the Project
 
@@ -345,4 +365,3 @@ It helps the project grow and reach more developers.
 Thank you! 💙
 
 </div>
-````
