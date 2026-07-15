@@ -234,3 +234,40 @@ export const signInWithOAuth = async (provider: OAuthProvider): Promise<void> =>
 
   redirect(data.url);
 };
+
+export const setInitialPassword = async (
+  _prevState: AuthActionState,
+  formData: FormData,
+): Promise<AuthActionState> => {
+  const locale = await getLocale();
+  const t = await getTranslations({ locale, namespace: "auth" });
+  const schema = createResetPasswordSchema(t); // reset ve set-password aynı kurallara tabi
+
+  const parsed = schema.safeParse({
+    password: formData.get("password"),
+    confirmPassword: formData.get("confirmPassword"),
+  });
+
+  if (!parsed.success) {
+    return { status: "error", fieldErrors: parsed.error.flatten().fieldErrors };
+  }
+
+  const supabase = await createClient();
+  const { data: userData, error: userError } = await supabase.auth.getUser();
+
+  if (userError || !userData.user) {
+    redirect(`/${locale}/login`);
+  }
+
+  const { error } = await supabase.auth.updateUser({ password: parsed.data.password });
+
+  if (error) {
+    return { status: "error", message: t("errors.generic") };
+  }
+
+  const cookieStore = await cookies();
+  cookieStore.delete("coreverse-needs-password");
+
+  const next = (formData.get("next") as string | null) ?? `/${locale}`;
+  redirect(next);
+};

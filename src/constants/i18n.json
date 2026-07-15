@@ -412,6 +412,13 @@
           "processingFailed": "Görsel işlenemedi, tekrar dene."
         }
       },
+      "setPassword": {
+        "title": "Yeni hesabın için şifreni gir",
+        "description": "Yeni oluşturduğun Coreverse Engine hesabın için bir şifre belirle.",
+        "passwordLabel": "Şifreni gir",
+        "confirmPasswordLabel": "Şifreni doğrula",
+        "submit": "Onayla"
+      },
       "forgotPassword": {
         "title": "Şifreni mi unuttun?",
         "subtitle": "E-posta adresini gir, sana bir sıfırlama bağlantısı gönderelim",
