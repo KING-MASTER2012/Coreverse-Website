@@ -69,36 +69,36 @@ The project is built with a strong focus on:
 
 # 🌍 Supported Languages
 
-| Language | Status |
-| :--- | :--- |
-| 🇺🇸 English | ✅ |
-| 🇹🇷 Turkish | ✅ |
-| 🇫🇷 French | ✅ |
-| 🇩🇪 German | ✅ |
-| 🇪🇸 Spanish | ✅ |
-| 🇵🇹 Portuguese | ✅ |
-| 🇷🇺 Russian | ✅ |
-| 🇨🇳 Simplified Chinese | ✅ |
-| 🇯🇵 Japanese | ✅ |
-| 🇰🇷 Korean | ✅ |
-| 🇵🇱 Polish | ✅ |
-| 🇮🇳 Hindi | ✅ |
-| 🇸🇦 Arabic | ✅ |
+| Language                 | Status  |
+|:-------------------------|:--------|
+| 🇺🇸 English             | ✅       |
+| 🇹🇷 Turkish             | ✅       |
+| 🇫🇷 French              | ✅       |
+| 🇩🇪 German              | ✅       |
+| 🇪🇸 Spanish             | ✅       |
+| 🇵🇹 Portuguese          | ✅       |
+| 🇷🇺 Russian             | ✅       |
+| 🇨🇳 Simplified Chinese  | ✅       |
+| 🇯🇵 Japanese            | ✅       |
+| 🇰🇷 Korean              | ✅       |
+| 🇵🇱 Polish              | ✅       |
+| 🇮🇳 Hindi               | ✅       |
+| 🇸🇦 Arabic              | ✅       |
 
 ---
 
 # 🛠️ Technology Stack
 
-| Technology | Purpose |
-| :--- | :--- |
-| Next.js | React Framework |
-| React | UI Library |
-| TypeScript | Type Safety |
-| Tailwind CSS | Styling |
-| next-intl | Localization |
-| Supabase | Backend & Authentication |
-| GitHub Actions | CI/CD |
-| ESLint | Code Quality |
+| Technology     | Purpose                  |
+|:---------------|:-------------------------|
+| Next.js        | React Framework          |
+| React          | UI Library               |
+| TypeScript     | Type Safety              |
+| Tailwind CSS   | Styling                  |
+| next-intl      | Localization             |
+| Supabase       | Backend & Authentication |
+| GitHub Actions | CI/CD                    |
+| ESLint         | Code Quality             |
 
 ---
 
@@ -250,12 +250,14 @@ http://192.168.1.130:3000
 
 # 📜 Available Scripts
 
-| Command | Description |
-| :--- | :--- |
-| npm run dev | Development server |
-| npm run build | Production build |
-| npm run start | Production server |
-| npm run lint | Run ESLint |
+| Command                 | Description               |
+|:------------------------|:--------------------------|
+| npm run dev             | Development server        |
+| npm run dev:host        | Host development server   |
+| npm run build           | Production build          |
+| npm run start           | Production server         |
+| npm run lint            | Run ESLint                |
+| npm run typecheck       | Testing if the code works |
 
 ---
 
